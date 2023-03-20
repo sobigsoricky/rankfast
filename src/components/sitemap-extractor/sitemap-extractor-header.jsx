@@ -1,8 +1,9 @@
 import Link from "next/link";
 import React, { useState, useEffect } from "react";
+import { CSVLink, CSVDownload } from "react-csv";
 
 const SitemapExtractorHeader = () => {
-  const [urls, setUrls] = useState([]);
+  const [urls, setUrls] = useState([["urls"]]);
   const [sitemap, setSitemap] = useState("")
  
   const fetchSitemap = (url) => {
@@ -23,7 +24,7 @@ const SitemapExtractorHeader = () => {
 
         const locs = xmlDoc.getElementsByTagName("loc");
         for (let i = 0; i < locs.length; i++) {
-          urls.push(locs[i].childNodes[0].nodeValue);
+          urls.push( [locs[i].childNodes[0].nodeValue]);
         }
 
         setUrls(prevUrls => [...prevUrls, ...urls]);
@@ -59,7 +60,7 @@ const SitemapExtractorHeader = () => {
     <div className="bg-white p-4 rounded-lg">
         <div>
             <h3>Profile URL</h3>
-            <button className="">Download CSV File</button>
+            <CSVLink data={urls} className="py-3 px-5 bg-[#212121] text-white font-bold">Download </CSVLink>
         </div>
         {urls?.map((url, i) =>(
           <Link key={i} href={url} target={"_blank"}>{url}</Link>
