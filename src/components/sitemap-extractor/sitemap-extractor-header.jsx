@@ -61,7 +61,7 @@ const SitemapExtractorHeader = () => {
             <h3>Profile URL</h3>
             <button className="">Download CSV File</button>
         </div>
-        {urls?.map(url, i =>(
+        {urls?.map((url, i) =>(
           <Link key={i} href={url} target={"_blank"}>{url}</Link>
         ))}
 
