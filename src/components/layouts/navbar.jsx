@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React, { useState } from "react";
 
 const Navbar = () => {
@@ -8,48 +9,50 @@ const Navbar = () => {
         <div className="mx-auto container   sm:px-6 lg:px-[120px] px-2">
           <div className="flex  items-center justify-between">
             <div className="flex-1 md:flex md:items-center md:gap-12">
-              <a className="block text-teal-600" href="/">
+              <Link className="block text-teal-600" href="/">
                
                 <img src="/logo.svg" alt="" />
-              </a>
+              </Link>
             </div>
 
             <div className="md:flex md:items-center md:gap-12">
               <nav aria-label="Site Nav" className={`${showMenu?"block":"hidden"} lg:block`}>
                 <ul className="flex fixed right-0 top-[140px] w-full h-full  bg-[#E72C4B] md:bg-transparent md:static  flex-col lg:flex-row items-center gap-6 text-sm">
                 <li>
-                    <a
+                    <Link
+                      href="/our-process"
                       className="text-white transition hover:text-white/75"
-                      href="/"
                     >
                       Our Process
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a
+                    <Link
                       className="text-white transition hover:text-white/75"
-                      href="/"
+                      href="https://www.coursenator.com/"
+                      target={"_blank"}
+
                     >
                       Coursenator
-                    </a>
+                    </Link>
                   </li>
 
                   <li>
-                    <a
+                    <Link
                       className="text-white transition hover:text-white/75"
-                      href="/"
+                      href="/edtech"
                     >
                       Ed-tech
-                    </a>
+                    </Link>
                   </li>
 
                   <li>
-                    <a
+                    <Link
                       className="text-white transition hover:text-white/75"
-                      href="/"
+                      href="/portfolio"
                     >
                       Portfolio
-                    </a>
+                    </Link>
                   </li>
 
                   <li>
@@ -61,12 +64,12 @@ const Navbar = () => {
                     </a>
                   </li>
                   <li className="sm:flex sm:gap-4">
-                  <a
+                  <Link
                     className=" bg-[#E72C4B] px-11 py-4 text-sm font-medium text-white"
-                    href="/"
+                    href="/contact-us"
                   >
                     Contact us
-                  </a>
+                  </Link>
                 </li>
                  
                 </ul>

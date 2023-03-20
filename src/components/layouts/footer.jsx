@@ -2,6 +2,29 @@ import Image from "next/image";
 import React from "react";
 
 const Footer = () => {
+
+  const submitForm = (event) => {
+    console.log(event);
+    event.preventDefault();
+    fetch("https://formsubmit.co/ajax/pranay@coursenator.com", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+      },
+      body: JSON.stringify({
+      
+        email: event.target[0].value,
+        website: event.target[1].value,
+      }),
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        console.log(data);
+        alert("form submitted");
+      })
+      .catch((error) => console.log(error));
+  };
   return (
     <div className="bg-[#111111] mt-40">
       <div className="container mx-auto lg:px-[120px] px-2 pt-11 flex flex-col lg:flex-row justify-between items-start gap-4">
@@ -125,7 +148,7 @@ const Footer = () => {
                 </div>
               </div>
               <div className="mt-12">
-                <form action="" className="flex flex-col gap-5 ">
+                <form onSubmit={e => submitForm(e)} className="flex flex-col gap-5 ">
                   <div className=" flex flex-col w-full gap-3">
                     <input
                       type="text"

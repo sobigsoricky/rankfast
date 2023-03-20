@@ -25,12 +25,9 @@ export const options = {
   responsive: true,
   plugins: {
     legend: {
-      position: "top",
+      position: "bottom",
     },
-    title: {
-      display: true,
-      text: "Chart.js Line Chart",
-    },
+
   },
 };
 const labels = ["January", "February", "March", "April", "May", "June", "July"];

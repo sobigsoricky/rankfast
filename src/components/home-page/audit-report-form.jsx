@@ -1,19 +1,46 @@
 import React from "react";
 
 const AuditReportForm = () => {
+  const submitForm = (event) => {
+    console.log(event);
+    event.preventDefault();
+    fetch("https://formsubmit.co/ajax/pranay@coursenator.com", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+      },
+      body: JSON.stringify({
+      
+        email: event.target[0].value,
+        website: event.target[1].value,
+      }),
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        console.log(data);
+        alert("form submitted");
+      })
+      .catch((error) => console.log(error));
+  };
   return (
     <>
       <div className=" container mx-auto lg:px-[120px] px-2">
         <div className="bg-[#212121] py-14 px-11 flex md:flex-row flex-col gap-4">
           <div className="text-white md:w-2/5">
-            <h3 className="text-4xl font-[impact]">REQUEST A FREE AUDIT REPORT</h3>
+            <h3 className="text-4xl font-[impact]">
+              REQUEST A FREE AUDIT REPORT
+            </h3>
             <p className="text-[#E72C4B] text-sm font-semibold">
               REPORT WILL BE SENT IN AN HOUR!
             </p>
           </div>
 
           <div className="md:w-3/5">
-            <form action="" className="flex gap-5 md:flex-row flex-col">
+            <form
+              onSubmit={(e) => submitForm(e)}
+              className="flex gap-5 md:flex-row flex-col"
+            >
               <div className="flex flex-col  w-full gap-3">
                 <input
                   type="text"
@@ -26,7 +53,10 @@ const AuditReportForm = () => {
                   placeholder="Enter your website URL"
                 />
               </div>
-              <button className="bg-white hover:bg-[#E72C4B] hover:text-white duration-500  flex justify-center py-6  items-center  group px-28 md:py-2 relative overflow-hidden">
+              <button
+                type="submit"
+                className="bg-white hover:bg-[#E72C4B] hover:text-white duration-500  flex justify-center py-6  items-center  group px-28 md:py-2 relative overflow-hidden"
+              >
                 <span className="text-lg font-semibold text-white absolute left-[-200%] group-hover:left-0 w-full duration-500">
                   Send
                 </span>

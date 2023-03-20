@@ -19,10 +19,10 @@ const EdtechHeader = () => {
         </div>
 
         <div className="mt-16 flex flex-wrap gap-6 container mx-auto lg:px-[120px] px-2 ">
-          <button className="border-2 border-[#E72C4B] bg-[#E72C4B] w-full text-center md:px-24 py-5  font-medium text-white">
+          <button className="border-2 border-[#E72C4B] bg-[#E72C4B] w-full md:w-auto text-center md:px-24 py-5  font-medium text-white">
             Contact us
           </button>
-          <button className="border-2 border-white w-full text-center md:px-24 py-5  font-medium text-white">
+          <button className="border-2 border-white w-full  md:w-auto text-center md:px-24 py-5  font-medium text-white">
             View Results
           </button>
         </div>
