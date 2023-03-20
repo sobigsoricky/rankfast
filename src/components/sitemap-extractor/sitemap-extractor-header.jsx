@@ -1,7 +1,37 @@
-import React from "react";
+import Link from "next/link";
+import React, { useState, useEffect } from "react";
 
 const SitemapExtractorHeader = () => {
+  const [urls, setUrls] = useState([]);
+  const [sitemap, setSitemap] = useState("")
+ 
+  const fetchSitemap = (url) => {
+    const proxyUrl = "https://cors-anywhere.herokuapp.com/";
+    const fullUrl = proxyUrl + url;
+    fetch(fullUrl)
+      .then((response) => response.text())
+      .then((data) => {
+        const parser = new DOMParser();
+        const xmlDoc = parser.parseFromString(data, "text/xml");
+        const sitemaps = xmlDoc.getElementsByTagName("sitemap");
+        const urls = [];
+
+        for (let i = 0; i < sitemaps.length; i++) {
+          const loc = sitemaps[i].getElementsByTagName("loc")[0].childNodes[0].nodeValue;
+          fetchSitemap(loc);
+        }
+
+        const locs = xmlDoc.getElementsByTagName("loc");
+        for (let i = 0; i < locs.length; i++) {
+          urls.push(locs[i].childNodes[0].nodeValue);
+        }
+
+        setUrls(prevUrls => [...prevUrls, ...urls]);
+      });
+  };
   return (
+    <>
+   
     <div
       className="bg-[#212121]  
   pt-[140px]  pb-16"
@@ -19,18 +49,24 @@ const SitemapExtractorHeader = () => {
           sitemap-url
         </label>
         <div className="flex w-full">
-          <input id="sitemap-url" type="text" className="w-full bg-transparent border border-[#FFFFFF33]" />
-          <button className="py-5 px-20 bg-[#E72C4B]">Upload</button>
+          <input onChange={e => setSitemap(e.target.value)} id="sitemap-url" type="text" className="w-full bg-transparent border border-[#FFFFFF33]" />
+          <button onClick={e => fetchSitemap(sitemap)} className="py-5 px-20 bg-[#E72C4B]">Upload</button>
         </div>
       </div>
 
-      <div>
+    
+    </div>
+    <div className="bg-white p-4 rounded-lg">
         <div>
             <h3>Profile URL</h3>
             <button className="">Download CSV File</button>
         </div>
+        {urls?.map(url, i =>{
+          <Link key={i} href={url} target={"_blank"}>{url}</Link>
+        })}
+
       </div>
-    </div>
+    </>
   );
 };
 

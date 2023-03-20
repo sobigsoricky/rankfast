@@ -124,14 +124,14 @@ const SeonatorTurnon = () => {
         See how we make <span className="text-[#E72C4B]">the difference</span>
       </h2>
       <div className="md:p-10  ">
-        <div>
+        <div className="w-full flex flex-col items-end">
           <p>Turn on Seonator</p>
-          <div className="relative inline-block w-20  align-middle select-none transition duration-200 ease-in">
+          <div className="relative inline-block w-20  align-middle select-none transition duration-200 ease-in right-0">
             <input
               type="checkbox"
               name="toggle"
               id="toggle"
-              className={`toggle-checkbox absolute block w-10 h-10 rounded-full bg-white border-4 appearance-none cursor-pointer  ${
+              className={`toggle-checkbox absolute block w-10 h-10 rounded-full  border-4 appearance-none cursor-pointer  ${
                 isChecked
                   ? "bg-green-400  right-0  duration-500"
                   : "bg-red-400 right-[calc(100%_-_40px)]  duration-500"
