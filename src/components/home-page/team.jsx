@@ -54,7 +54,7 @@ const Team = () => {
           {
             breakpoint: 864,
             settings: {
-              slidesToShow: 4,
+              slidesToShow: 3,
             },
           },
         ]}
@@ -74,7 +74,7 @@ const Team = () => {
               alt=""
               height={300}
               width={300}
-              className="w-full object-center object-cover"
+              className="w-full object-center object-contain"
             />
             <div className="absolute z-10 bottom-0 p-4 w-full h-full flex flex-col justify-end items-start bg-gradient-to-t from-[#000000CC]   ">
               <h2 className="text-xl  font-[impact] text-white my-1">

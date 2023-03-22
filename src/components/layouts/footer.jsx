@@ -46,8 +46,10 @@ const Footer = () => {
               <Link href={"https://www.coursenator.com/"} target="_blank">
               <li className="text-white list-disc">Coursenator</li>
               </Link>
-              {/* <li className="text-white list-disc">Ed-tech</li>
+              <Link href="/portfolio">
               <li className="text-white list-disc">Portfolio</li>
+              </Link>
+              {/* <li className="text-white list-disc">Ed-tech</li>
               <li className="text-white list-disc">Blog</li> */}
             </ul>
           </div>

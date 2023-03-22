@@ -47,7 +47,7 @@ const Navbar = () => {
                       Ed-tech
                     </Link>
                   </li> */}
-{/* 
+
                   <li>
                     <Link
                       className="text-white transition hover:text-white/75"
@@ -55,7 +55,7 @@ const Navbar = () => {
                     >
                       Portfolio
                     </Link>
-                  </li> */}
+                  </li>
 
                   {/* <li>
                     <a
