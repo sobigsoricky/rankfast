@@ -24,8 +24,8 @@ const ProcessHeader = () => {
               </div>
               <div className="flex flex-col pb-6 sm:items-center sm:flex-row sm:pb-0">
                 <div className="max-w-1/2">
-                  <p className="text-xl font-semibold sm:text-base text-center">
-                    first
+                  <p className="text-xl text-white font-light sm:text-base text-center">
+                  Technical SEO audit
                   </p>
                   <svg
                     
@@ -47,14 +47,14 @@ const ProcessHeader = () => {
               <div className="w-px h-10 bg-gray-300" />
                 
                 <div>
-                  <div className="text-3xl  font-bold text-white ">Step 1</div>
+                  <div className="text-3xl  font-bold text-white ">Step 2</div>
                 </div>
                 <div className="w-px h-10 bg-gray-300" />
               </div>
               <div className="flex flex-col pb-6 sm:items-center sm:flex-row sm:pb-0">
                 <div className="max-w-1/2">
-                  <p className="text-xl font-semibold sm:text-base text-center">
-                    first
+                  <p className="text-xl text-white font-light sm:text-base text-center">
+                  On page keyword research
                   </p>
                   <svg
                     
@@ -76,14 +76,14 @@ const ProcessHeader = () => {
               <div className="w-px h-10 bg-gray-300" />
                 
                 <div>
-                  <div className="text-3xl  font-bold text-white ">Step 1</div>
+                  <div className="text-3xl  font-bold text-white ">Step 3</div>
                 </div>
                 <div className="w-px h-10 bg-gray-300" />
               </div>
               <div className="flex flex-col pb-6 sm:items-center sm:flex-row sm:pb-0">
                 <div className="max-w-1/2">
-                  <p className="text-xl font-semibold sm:text-base text-center">
-                    first
+                  <p className="text-xl text-white font-light sm:text-base text-center">
+                  Topical authority building
                   </p>
                   <svg
                     
@@ -105,14 +105,14 @@ const ProcessHeader = () => {
               <div className="w-px h-10 bg-gray-300" />
                 
                 <div>
-                  <div className="text-3xl  font-bold text-white ">Step 1</div>
+                  <div className="text-3xl  font-bold text-white ">Step 4</div>
                 </div>
                 <div className="w-px h-10 bg-gray-300" />
               </div>
               <div className="flex flex-col pb-6 sm:items-center sm:flex-row sm:pb-0">
                 <div className="max-w-1/2">
-                  <p className="text-xl font-semibold sm:text-base text-center">
-                    first
+                  <p className="text-xl text-white font-light sm:text-base text-center">
+                  Competitor analysis
                   </p>
                   <svg
                     
@@ -134,14 +134,14 @@ const ProcessHeader = () => {
               <div className="w-px h-10 bg-gray-300" />
                 
                 <div>
-                  <div className="text-3xl  font-bold text-white ">Step 1</div>
+                  <div className="text-3xl  font-bold text-white ">Step 5</div>
                 </div>
                 <div className="w-px h-10 bg-gray-300" />
               </div>
               <div className="flex flex-col pb-6 sm:items-center sm:flex-row sm:pb-0">
                 <div className="max-w-1/2">
-                  <p className="text-xl font-semibold sm:text-base text-center">
-                    first
+                  <p className="text-xl text-white font-light sm:text-base text-center">
+                  Link building management
                   </p>
                   <svg
                     
@@ -163,14 +163,14 @@ const ProcessHeader = () => {
               <div className="w-px h-10 bg-gray-300" />
                 
                 <div>
-                  <div className="text-3xl  font-bold text-white ">Step 1</div>
+                  <div className="text-3xl  font-bold text-white ">Step 6</div>
                 </div>
                 <div className="w-px h-10 bg-gray-300" />
               </div>
               <div className="flex flex-col pb-6 sm:items-center sm:flex-row sm:pb-0">
                 <div className="max-w-1/2">
-                  <p className="text-xl font-semibold sm:text-base text-center">
-                    first
+                  <p className="text-xl text-white font-light sm:text-base text-center">
+                  Content management (Update, merge, delete)
                   </p>
                   <svg
                     
@@ -192,14 +192,14 @@ const ProcessHeader = () => {
               <div className="w-px h-10 bg-gray-300" />
                 
                 <div>
-                  <div className="text-3xl  font-bold text-white ">Step 1</div>
+                  <div className="text-3xl  font-bold text-white ">Step 7</div>
                 </div>
                 <div className="w-px h-10 bg-gray-300" />
               </div>
               <div className="flex flex-col pb-6 sm:items-center sm:flex-row sm:pb-0">
                 <div className="max-w-1/2">
-                  <p className="text-xl font-semibold sm:text-base text-center">
-                    first
+                  <p className="text-xl text-white font-light sm:text-base text-center">
+                  Influencer campaigns
                   </p>
                   <svg
                     
@@ -221,14 +221,14 @@ const ProcessHeader = () => {
               <div className="w-px h-10 bg-gray-300" />
                 
                 <div>
-                  <div className="text-3xl  font-bold text-white ">Step 1</div>
+                  <div className="text-3xl  font-bold text-white ">Step 8</div>
                 </div>
                 {/* <div className="w-px h-10 bg-gray-300" /> */}
               </div>
               <div className="flex flex-col pb-6 sm:items-center sm:flex-row sm:pb-0">
                 <div className="max-w-1/2">
-                  <p className="text-xl font-semibold sm:text-base text-center">
-                    first
+                  <p className="text-xl text-white font-light sm:text-base text-center">
+                  Conversion rate optimization
                   </p>
                   <svg
                     

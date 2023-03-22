@@ -10,10 +10,10 @@ const Navbar = () => {
         <div className="mx-auto container   sm:px-6 lg:px-[120px] px-2">
           <div className="flex  items-center justify-between">
             <div className="flex-1 md:flex md:items-center md:gap-12">
-              <Link className=" text-white font-[impact] flex flex-col justify-center items-center" href="/">
+              <Link className=" text-white font-[impact] flex flex-col justify-center " href="/">
                {/* Rankfast */}
-                <Image src="https://iili.io/HhVh3Eg.png" alt="" width={150} height={60} className="z-10"/>
-                <h2 className="-mt-3 text-2xl font-light">Rankfast</h2>
+                <Image src="https://iili.io/HhP6gb2.md.png" alt="" width={200} height={60} className="z-10"/>
+                {/* <h2 className="-mt-3 text-2xl font-light">Rankfast</h2> */}
               </Link>
             </div>
 
@@ -47,7 +47,7 @@ const Navbar = () => {
                       Ed-tech
                     </Link>
                   </li> */}
-
+{/* 
                   <li>
                     <Link
                       className="text-white transition hover:text-white/75"
@@ -55,7 +55,7 @@ const Navbar = () => {
                     >
                       Portfolio
                     </Link>
-                  </li>
+                  </li> */}
 
                   {/* <li>
                     <a

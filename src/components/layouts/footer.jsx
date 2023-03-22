@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 const Footer = () => {
@@ -36,12 +37,18 @@ const Footer = () => {
           <div className="flex flex-col items-stretch">
             <h2 className="text-3xl font-bold text-white mb-4">About us</h2>
             <ul className="flex flex-col gap-4 pl-5">
+              <Link href="/">
               <li className="text-white list-disc">Home</li>
+              </Link>
+              <Link href="/our-process">
               <li className="text-white list-disc">Our Process</li>
+              </Link>
+              <Link href={"https://www.coursenator.com/"} target="_blank">
               <li className="text-white list-disc">Coursenator</li>
-              <li className="text-white list-disc">Ed-tech</li>
+              </Link>
+              {/* <li className="text-white list-disc">Ed-tech</li>
               <li className="text-white list-disc">Portfolio</li>
-              <li className="text-white list-disc">Blog</li>
+              <li className="text-white list-disc">Blog</li> */}
             </ul>
           </div>
         </>
@@ -85,7 +92,7 @@ const Footer = () => {
                         fill="white"
                       />
                     </svg>
-                    Email@.com
+                    pranay@coursenator.com
                   </li>
                   <li className="flex text-white items-center gap-2">
                     <svg
@@ -100,7 +107,7 @@ const Footer = () => {
                         fill="white"
                       />
                     </svg>
-                    12314141453
+                    +91 9958448730
                   </li>
                   <li className="flex text-white items-center gap-2">
                     <svg
@@ -115,11 +122,13 @@ const Footer = () => {
                         fill="white"
                       />
                     </svg>
-                    07 5606 7876
+                    +91 9958448730
                   </li>
                 </ul>
 
                 <div className="flex items-center gap-11">
+                  <Link href="https://www.linkedin.com/company/courseo/mycompany/" target={"_blank"}>
+                  
                   <svg
                     width="24"
                     height="24"
@@ -132,8 +141,8 @@ const Footer = () => {
                       fill="white"
                     />
                   </svg>
-
-                  <svg
+                  </Link>
+                  {/* <svg
                     width="24"
                     height="24"
                     viewBox="0 0 24 24"
@@ -144,7 +153,7 @@ const Footer = () => {
                       d="M22.67 0H1.33C0.978071 0.00261668 0.641298 0.143581 0.39244 0.39244C0.143581 0.641298 0.00261668 0.978071 0 1.33V22.67C0.00261668 23.0219 0.143581 23.3587 0.39244 23.6076C0.641298 23.8564 0.978071 23.9974 1.33 24H12.82V14.72H9.7V11.09H12.82V8.42C12.82 5.32 14.71 3.63 17.49 3.63C18.42 3.63 19.35 3.63 20.28 3.77V7H18.37C16.86 7 16.57 7.72 16.57 8.77V11.08H20.17L19.7 14.71H16.57V24H22.67C23.0219 23.9974 23.3587 23.8564 23.6076 23.6076C23.8564 23.3587 23.9974 23.0219 24 22.67V1.33C23.9974 0.978071 23.8564 0.641298 23.6076 0.39244C23.3587 0.143581 23.0219 0.00261668 22.67 0Z"
                       fill="white"
                     />
-                  </svg>
+                  </svg> */}
                 </div>
               </div>
               <div className="mt-12">

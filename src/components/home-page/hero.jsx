@@ -31,10 +31,16 @@ const Hero = () => {
         </div>
 
         <div className="mt-16 flex flex-wrap  gap-6 container mx-auto lg:px-[120px] px-2 ">
-          <Link href="/contact-us" className="text-center w-full md:w-auto border-2 border-[#E72C4B] bg-[#E72C4B] md:px-24 py-5  font-medium text-white">
+          <Link
+            href="/contact-us"
+            className="text-center w-full md:w-auto border-2 border-[#E72C4B] bg-[#E72C4B] md:px-24 py-5  font-medium text-white"
+          >
             Contact us
           </Link>
-          <Link href="" className="text-center w-full md:w-auto border-2 border-white md:px-24 py-5  font-medium text-white">
+          <Link
+            href=""
+            className="text-center w-full md:w-auto border-2 border-white md:px-24 py-5  font-medium text-white"
+          >
             View Results
           </Link>
         </div>
@@ -44,37 +50,29 @@ const Hero = () => {
           <h3 className="font-semibold text-white ">Results</h3>
 
           <Glider
-          responsive={[
-            {
-              breakpoint: 864,
-              settings: {
-                slidesToShow: 3,
+            responsive={[
+              {
+                breakpoint: 864,
+                settings: {
+                  slidesToShow: 3,
+                },
               },
-            },
-          ]}
+            ]}
             draggable
             slidesToShow={1.5}
             slidesToScroll={1}
             rewind
             className=" justify-between w-full"
           >
+            <div className="text-white  font-light">45+ SATISFIED CLIENS</div>
             <div className="text-white  font-light">
-              150% increased in natural traffic.
+              6,000,000+ NATURAL TRAFFIC
             </div>
             <div className="text-white  font-light">
-              150% increased in natural traffic.
+              2 million + REVENUE GENRATED
             </div>
             <div className="text-white  font-light">
-              150% increased in natural traffic.
-            </div>
-            <div className="text-white  font-light">
-              150% increased in natural traffic.
-            </div>
-            <div className="text-white  font-light">
-              150% increased in natural traffic.
-            </div>
-            <div className="text-white  font-light">
-              150% increased in natural traffic.
+              800% Average increase in website traffic
             </div>
           </Glider>
         </div>

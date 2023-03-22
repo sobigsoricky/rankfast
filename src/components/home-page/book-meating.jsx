@@ -18,7 +18,7 @@ const BookMeating = ({ color }) => {
           </h2>
         </div>
         <div className="w-full lg:w-[45%] border">
-          <InlineWidget url="https://calendly.com/coursenator-/seonator" />
+          <InlineWidget url="https://calendly.com/rankfaster/seo" />
         </div>
       </div>
     </div>
