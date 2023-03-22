@@ -96,7 +96,7 @@ const SeonatorTurnon = () => {
         datasets: [
           {
             label: "Natural traffic",
-            data: [182, 145, 119, 137, 186, 143, 161],
+            data: [182, 145, 119, 137, 186, 143, 161, 400],
             borderColor: "#E72C4B",
             backgroundColor: "#E72C4B",
           },

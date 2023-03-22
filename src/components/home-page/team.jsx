@@ -4,14 +4,17 @@ import Glider from "react-glider";
 import "glider-js/glider.min.css";
 const members = [
   {
+    img:"https://iili.io/HhQLDvt.md.jpg",
     name: "Pranav Bajaj",
     designation: "Founder and SEO Specialist",
   },
   {
+    img:"https://iili.io/HhZVk8P.md.jpg",
     name: "Pranay Mishra",
     designation: "Co-Founder and SEO Specialist",
   },
   {
+    img:"https://iili.io/HhZhAwF.md.jpg",
     name: "Subhabrata Roy ",
     designation: "SEO Director",
   },
@@ -64,20 +67,20 @@ const Team = () => {
         {members?.map((member, i) => (
           <div
             key={i}
-            className="relative mr-4"
+            className="relative mr-4  overflow-hidden"
           >
             <Image
-              src="https://iili.io/HXw5piF.png"
+              src={member.img}
               alt=""
               height={300}
               width={300}
-              className="object-cover w-full"
+              className="w-full object-center object-cover"
             />
-            <div className="absolute z-10 bottom-0 p-4 w-full h-full flex flex-col justify-end items-start bg-gradient-to-t from-[#000000CC]  ">
-              <h2 className="text-2xl  font-[impact] text-white my-1">
+            <div className="absolute z-10 bottom-0 p-4 w-full h-full flex flex-col justify-end items-start bg-gradient-to-t from-[#000000CC]   ">
+              <h2 className="text-xl  font-[impact] text-white my-1">
                 {member.name}
               </h2>
-              <p className="text-[#E72C4B]">{member.designation}</p>
+              <p className="text-sm font-bold text-[#E72C4B] break-words">{member.designation}</p>
               {/* <p className="text-white font-semibold">
                 Can code as fast as flash runs!!
               </p> */}
