@@ -4,29 +4,38 @@ import Glider from "react-glider";
 import "glider-js/glider.min.css";
 const members = [
   {
-    name: "Ajitesh Mishra",
-    designation: "Technical SEO Developer",
+    name: "Pranav Bajaj",
+    designation: "Founder and SEO Specialist",
   },
   {
     name: "Pranay Mishra",
-    designation: "Co-Founder and Technical Head",
+    designation: "Co-Founder and SEO Specialist",
   },
   {
-    name: "Pranav Bajaj",
-    designation: "Founder and Project Manager",
+    name: "Subhabrata Roy ",
+    designation: "SEO Director",
   },
   {
     name: "Tripti Pahwa",
-    designation: "SEO for social media",
+    designation: "LinkBuilding Queen",
   },
   {
-    name: "Deepraj Chawda",
-    designation: "The Automations Guy",
+    name: " Preeti Tiwari",
+    designation: "SEO Analyst",
   },
   {
-    name: "Subhabrata roy",
-    designation: "SEO director",
+    name: "Ajitesh Mishra",
+    designation: "Technical SEO Specialist ",
   },
+  {
+    name: " Abhijay Rajput",
+    designation: "Conversion Rate Optimizer",
+  },
+  {
+    name: "Kunal Goel",
+    designation: "SEO Tool Builder",
+  },
+ 
 ];
 
 const Team = () => {
@@ -42,7 +51,7 @@ const Team = () => {
           {
             breakpoint: 864,
             settings: {
-              slidesToShow: 3,
+              slidesToShow: 4,
             },
           },
         ]}

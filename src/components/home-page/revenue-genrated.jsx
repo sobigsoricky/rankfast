@@ -10,7 +10,7 @@ const RevenueGenrated = () => {
         </div>
         <div className="relative z-50 lg:px-[120px] px-2 mx-auto container py-[100px]">
           <h3 className="text-5xl lg:text-9xl  font-[impact] text-white">
-            $23,45,000{" "}
+            $2,345,000{" "}
             
           </h3>
           <span className="text-2xl font-semibold text-[#262626] block">
@@ -29,13 +29,13 @@ const RevenueGenrated = () => {
 
         <div className="box py-40 border border-[#00000033] text-center basis-1 md:basis-2/4 lg:basis-1/4">
           <h3 className="text-5xl  font-[impact] ">
-            23,34000 <span className="text-lg block uppercase">Natural traffic</span>
+            6000000+ <span className="text-lg block uppercase">Natural traffic</span>
           </h3>
         </div>
 
         <div className="box py-40 border border-[#00000033] text-center basis-1 md:basis-2/4 lg:basis-1/4">
           <h3 className="text-5xl  font-[impact] ">
-            1 million + <span className="text-lg block uppercase">revenue genrated</span>
+            2 million + <span className="text-lg block uppercase">revenue genrated</span>
           </h3>
         </div>
 
@@ -53,7 +53,7 @@ const RevenueGenrated = () => {
     -webkit-transition: background-position 1s;
     -moz-transition: background-position 1s;
     transition: background-position 500ms;
-    background-position: 00% -300%;
+    background-position: 00% -100%;
     overflow:clip
 }
 

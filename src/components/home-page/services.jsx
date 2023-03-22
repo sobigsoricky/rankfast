@@ -19,10 +19,11 @@ const services = [
     icon: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-link"><path d="M10 13H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5"/><path d="M14 10h5a2 2 0 0 1 2 2v6a2 2 0 0 1-2 2h-5"/><path d="M7 15h0"/></svg>',
   },
   {
-    name: 'Content creation',
-    description: 'We create high-quality content that is optimized for search engines and provides value to your target audience.',
-    icon: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 3v4a1 1 0 0 0 1 1h4"/><path d="M14 3L21 10v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V10"/><path d="M9 14h.01"/></svg>'
-  },
+    name: 'Content Marketing',
+    description: 'We help create and distribute high-quality, SEO-friendly content for your website, including blog posts, infographics, and videos, to improve your website	&apos; s visibility and authority.',
+    icon: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M13 2L4 11v9a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2h-3"/><path d="M13 2v9h9"/><line x1="9" y1="17" x2="15" y2="17"/><line x1="10" y1="13" x2="14" y2="13"/></svg>'
+    },
+ 
   {
     name: 'Local SEO',
     description: 'We optimize your website and online presence for local search results, including optimizing your Google My Business listing, creating local citations, and building local backlinks.',
@@ -33,16 +34,8 @@ const services = [
       description: 'We optimize the technical aspects of your website to make it more search engine friendly, including optimizing site speed, fixing broken links, and optimizing the website	&apos;s structure.',
       icon: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-settings"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a9 9 0 0 1-1.35 2.86l-1.5-1.5a7 7 0 0 0-2.36-.96l-.28-.03a5 5 0 0 1-5.67-5.67l-.03-.28a7 7 0 0 0-.96-2.36l-1.5-1.5A9 9 0 0 1 8 4.6V3a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v1.6a9 9 0 0 1 1 8.64 8.64 0 0 0 2.12 2.12"/></svg>'
     },
-    {
-      name: 'E-commerce SEO',
-      description: 'We help optimize your e-commerce website for search engines, including optimizing product descriptions, improving site structure, and building high-quality backlinks.',
-      icon: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-shopping-bag"><path d="M9 10L7.2 19.4C7.07569 20.1984 7.65186 20.9574 8.45 21H15.55C16.3481 20.9574 16.9243 20.1984 16.8 19.4L15 10M3 6H21L17.5 14H6.5L3 6Z"/><path d="M16 6A2 2 0 1 1 12 6A2 2 0 0 1 16 6Z"/></svg>'
-      },
-      {
-      name: 'Content Marketing',
-      description: 'We help create and distribute high-quality, SEO-friendly content for your website, including blog posts, infographics, and videos, to improve your website	&apos; s visibility and authority.',
-      icon: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M13 2L4 11v9a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2h-3"/><path d="M13 2v9h9"/><line x1="9" y1="17" x2="15" y2="17"/><line x1="10" y1="13" x2="14" y2="13"/></svg>'
-      }
+ 
+  
 ];
 
 const Services = () => {
@@ -83,7 +76,7 @@ const Services = () => {
           -webkit-transition: background-position 1s;
           -moz-transition: background-position 1s;
           transition: background-position 500ms;
-          background-position: -300% 0%;
+          background-position: -100% 0%;
           overflow: clip;
         }
 

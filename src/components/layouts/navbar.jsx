@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
 
@@ -9,9 +10,10 @@ const Navbar = () => {
         <div className="mx-auto container   sm:px-6 lg:px-[120px] px-2">
           <div className="flex  items-center justify-between">
             <div className="flex-1 md:flex md:items-center md:gap-12">
-              <Link className="block text-white font-[impact] text-3xl md:text-7xl" href="/">
-               RankFast
-                {/* <img src="/logo.svg" alt="" /> */}
+              <Link className=" text-white font-[impact] flex flex-col justify-center items-center" href="/">
+               {/* Rankfast */}
+                <Image src="https://iili.io/HhVh3Eg.png" alt="" width={150} height={60} className="z-10"/>
+                <h2 className="-mt-3 text-2xl font-light">Rankfast</h2>
               </Link>
             </div>
 
@@ -37,14 +39,14 @@ const Navbar = () => {
                     </Link>
                   </li>
 
-                  <li>
+                  {/* <li>
                     <Link
                       className="text-white transition hover:text-white/75"
                       href="/edtech"
                     >
                       Ed-tech
                     </Link>
-                  </li>
+                  </li> */}
 
                   <li>
                     <Link
@@ -55,14 +57,14 @@ const Navbar = () => {
                     </Link>
                   </li>
 
-                  <li>
+                  {/* <li>
                     <a
                       className="text-white transition hover:text-white/75"
                       href="/"
                     >
                      Blog
                     </a>
-                  </li>
+                  </li> */}
                   <li className="sm:flex sm:gap-4">
                   <Link
                     className=" bg-[#E72C4B] px-11 py-4 text-sm font-medium text-white"

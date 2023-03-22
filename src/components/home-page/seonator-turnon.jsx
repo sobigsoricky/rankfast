@@ -125,7 +125,7 @@ const SeonatorTurnon = () => {
       </h2>
       <div className="md:p-10  ">
         <div className="w-full flex flex-col items-end">
-          <p>Turn on RankFast</p>
+          <p>Turn on Rankfast</p>
           <div className="relative inline-block w-20  align-middle select-none transition duration-200 ease-in right-0">
             <input
               type="checkbox"
