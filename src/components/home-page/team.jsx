@@ -1,5 +1,33 @@
 import Image from "next/image";
 import React from "react";
+import Glider from "react-glider";
+import "glider-js/glider.min.css";
+const members = [
+  {
+    name: "Ajitesh Mishra",
+    designation: "Technical SEO Developer",
+  },
+  {
+    name: "Pranay Mishra",
+    designation: "Co-Founder and Technical Head",
+  },
+  {
+    name: "Pranav Bajaj",
+    designation: "Founder and Project Manager",
+  },
+  {
+    name: "Tripti Pahwa",
+    designation: "SEO for social media",
+  },
+  {
+    name: "Deepraj Chawda",
+    designation: "The Automations Guy",
+  },
+  {
+    name: "Subhabrata roy",
+    designation: "SEO director",
+  },
+];
 
 const Team = () => {
   return (
@@ -9,55 +37,45 @@ const Team = () => {
         <br /> <span className="text-[#E72C4B]"> Experts</span>
       </h2>
 
-      <div className="flex  gap-2 flex-wrap lg:flex-nowrap w-full">
-        <div className="relative w-full md:basis-2/4 lg:w-full/4 h-[400px]">
-          <Image src="https://iili.io/HXw5piF.png" alt="" fill className="object-cover"/>
-          <div className="absolute z-10 bottom-0 p-4 w-full h-full flex flex-col justify-end items-start bg-gradient-to-t from-[#000000CC]  ">
-           
-            <h2 className="text-2xl  font-[impact] text-white my-1">
-            Member name
-            </h2>
-            <p className="text-[#E72C4B]">A.K.A  FLASH</p>
-            <p className="text-white font-semibold">Can code as fast as flash runs!!</p>
+      <Glider
+        responsive={[
+          {
+            breakpoint: 864,
+            settings: {
+              slidesToShow: 3,
+            },
+          },
+        ]}
+        draggable
+        slidesToShow={1.5}
+        slidesToScroll={1}
+        rewind
+        className="w-full "
+      >
+        {members?.map((member, i) => (
+          <div
+            key={i}
+            className="relative mr-4"
+          >
+            <Image
+              src="https://iili.io/HXw5piF.png"
+              alt=""
+              height={300}
+              width={300}
+              className="object-cover w-full"
+            />
+            <div className="absolute z-10 bottom-0 p-4 w-full h-full flex flex-col justify-end items-start bg-gradient-to-t from-[#000000CC]  ">
+              <h2 className="text-2xl  font-[impact] text-white my-1">
+                {member.name}
+              </h2>
+              <p className="text-[#E72C4B]">{member.designation}</p>
+              {/* <p className="text-white font-semibold">
+                Can code as fast as flash runs!!
+              </p> */}
+            </div>
           </div>
-        </div>
-
-        <div className="relative w-full md:basis-2/4 lg:w-full/4 h-[400px]">
-          <Image src="https://iili.io/HXw5piF.png" alt="" fill className="object-cover"/>
-          <div className="absolute z-10 bottom-0 p-4 w-full h-full flex flex-col justify-end items-start bg-gradient-to-t from-[#0000007d]  ">
-           
-            <h2 className="text-2xl  font-[impact] text-white my-1">
-            Member name
-            </h2>
-            <p className="text-[#E72C4B]">A.K.A  FLASH</p>
-            <p className="text-white font-semibold">Can code as fast as flash runs!!</p>
-          </div>
-        </div>
-
-        <div className="relative w-full md:basis-2/4 lg:w-full/4 h-[400px]">
-          <Image src="https://iili.io/HXw5piF.png" alt="" fill className="object-cover"/>
-          <div className="absolute z-10 bottom-0 p-4 w-full h-full flex flex-col justify-end items-start bg-gradient-to-t from-[#000000CC]  ">
-           
-            <h2 className="text-2xl  font-[impact] text-white my-1">
-            Member name
-            </h2>
-            <p className="text-[#E72C4B]">A.K.A  FLASH</p>
-            <p className="text-white font-semibold">Can code as fast as flash runs!!</p>
-          </div>
-        </div>
-
-        <div className="relative w-full md:basis-2/4 lg:w-full/4 h-[400px]">
-          <Image src="https://iili.io/HXw5piF.png" alt="" fill className="object-cover"/>
-          <div className="absolute z-10 bottom-0 p-4 w-full h-full flex flex-col justify-end items-start bg-gradient-to-t from-[#000000CC]  ">
-           
-            <h2 className="text-2xl  font-[impact] text-white my-1">
-            Member name
-            </h2>
-            <p className="text-[#E72C4B]">A.K.A  FLASH</p>
-            <p className="text-white font-semibold">Can code as fast as flash runs!!</p>
-          </div>
-        </div>
-      </div>
+        ))}
+      </Glider>
     </div>
   );
 };

@@ -42,7 +42,7 @@ const Testimonials = () => {
         className="gap-4 w-full"
       >
         {testimonials?.map((testimonial, i) =>(
-          <div className=" border border-[#00000033] group overflow-clip w-[400px] ml-4">
+          <div key={i} className=" border border-[#00000033] group overflow-clip w-[400px] ml-4">
           {/* <div className="relative overflow-clip w-full h-[200px] object-cover">
             <Image
               src="https://iili.io/HXjtmGf.md.webp"
