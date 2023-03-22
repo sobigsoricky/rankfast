@@ -9,7 +9,7 @@ const EdtechHeader = () => {
         <div className="flex flex-col lg:flex-row justify-between container mx-auto lg:px-[120px] px-2 ">
           <div className="pt-[80px] ">
             <h1 className="text-2xl text-white font-semibold">
-            Welcome to Seonator Solutions
+            Welcome to RankFast Solutions
             </h1>
             <h2 className="font-[impact] text-5xl md:text-8xl text-white font-light  uppercase">
             What's special we have for our edtech clients?

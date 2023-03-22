@@ -9,9 +9,9 @@ const Navbar = () => {
         <div className="mx-auto container   sm:px-6 lg:px-[120px] px-2">
           <div className="flex  items-center justify-between">
             <div className="flex-1 md:flex md:items-center md:gap-12">
-              <Link className="block text-teal-600" href="/">
-               
-                <img src="/logo.svg" alt="" />
+              <Link className="block text-white font-[impact] text-3xl md:text-7xl" href="/">
+               RankFast
+                {/* <img src="/logo.svg" alt="" /> */}
               </Link>
             </div>
 

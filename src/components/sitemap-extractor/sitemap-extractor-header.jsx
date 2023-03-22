@@ -7,9 +7,8 @@ const SitemapExtractorHeader = () => {
   const [sitemap, setSitemap] = useState("")
  
   const fetchSitemap = (url) => {
-    const proxyUrl = "https://cors-anywhere.herokuapp.com/";
-    const fullUrl = proxyUrl + url;
-    fetch(fullUrl)
+  
+    fetch(`/api/proxy?url=${url}`)
       .then((response) => response.text())
       .then((data) => {
         const parser = new DOMParser();
