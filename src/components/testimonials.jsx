@@ -4,7 +4,8 @@ import Glider from "react-glider";
 import "glider-js/glider.min.css";
 const testimonials = [
   {
-    person: "John Doe",
+    designation:"Founder of Think and Learn Smarter",
+    person: "Connell Kennelly",
     text: `I run an E-learning business that provide an online education service to high school students, and before trying myself to understand how SEO works, I was having a hard time getting my website to show up on Google. My search engine visibility was poor and I wasn't getting much website traffic.
  
     But after working with Coursenator, they implemented a variety of strategies to help improve my search engine rankings. They conducted keyword research to identify the terms that were most relevant to my business, and then optimized my website's meta tags and content to include those keywords. They also built backlinks to my website from other high-authority sites. They have also made it very clear for me what exactly I need to do in order for my articles to gain more widespread attention from my target audience. This is of immense importance and one of the true godsends of working with this company,
@@ -62,6 +63,8 @@ const Testimonials = () => {
           </div> */}
           <div className="p-4 ">
             <h3 className="text-2xl font-bold mb-2">{testimonial.person}</h3>
+            <h3 className="text-xl font-[impact] mb-2">{testimonial.designation}</h3>
+
             {/* <div className="flex flex-wrap gap-2">
               <span className="text-[#00BC29] bg-[#00BC2933] p-1">
                 123x Natural Traffic

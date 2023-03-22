@@ -39,19 +39,19 @@ const SeonatorTurnon = () => {
     datasets: [
       {
         label: "Natural traffic",
-        data: [10, 20, 40, 60, 100, 120],
+        data: [35, 76, 48, 89, 200, 62, 96],
         borderColor: "#E72C4B",
         backgroundColor: "#E72C4B",
       },
       {
         label: "Leads",
-        data: [0, 20, 30, 70, 90, 110],
+        data: [59, 85, 76, 96, 38, 51, 17],
         borderColor: "#1164BB",
         backgroundColor: "#1164BB",
       },
       {
         label: "Growth",
-        data: [-60, 0, 40, 60, 80, 95],
+        data: [10, 82, 45, 68, 24, 44, 76],
         borderColor: "#F5841F",
         backgroundColor: "#F5841F",
       },
@@ -70,19 +70,19 @@ const SeonatorTurnon = () => {
         datasets: [
           {
             label: "Natural traffic",
-            data: [40, 60, 70, 60, 200, 420],
+            data: [102, 110, 124, 139, 159, 177, 196],
             borderColor: "#E72C4B",
             backgroundColor: "#E72C4B",
           },
           {
             label: "Leads",
-            data: [10, 120, 130, 170, 190, 210],
+            data: [117, 117, 118, 150, 160, 168, 194],
             borderColor: "#1164BB",
             backgroundColor: "#1164BB",
           },
           {
             label: "Growth",
-            data: [160, 110, 240, 260, 280, 395],
+            data: [118, 119, 121, 154, 165, 168, 191],
             borderColor: "#F5841F",
             backgroundColor: "#F5841F",
           },
@@ -96,19 +96,19 @@ const SeonatorTurnon = () => {
         datasets: [
           {
             label: "Natural traffic",
-            data: [10, 20, 40, 60, 100, 120],
+            data: [35, 76, 48, 89, 200, 62, 97],
             borderColor: "#E72C4B",
             backgroundColor: "#E72C4B",
           },
           {
             label: "Leads",
-            data: [0, 20, 30, 70, 90, 110],
+            data: [59, 85, 76, 96, 38, 51, 17],
             borderColor: "#1164BB",
             backgroundColor: "#1164BB",
           },
           {
             label: "Growth",
-            data: [-60, 0, 40, 60, 80, 95],
+            data: [10, 82, 45, 68, 24, 44, 76],
             borderColor: "#F5841F",
             backgroundColor: "#F5841F",
           },
