@@ -39,19 +39,19 @@ const SeonatorTurnon = () => {
     datasets: [
       {
         label: "Natural traffic",
-        data: [35, 76, 48, 89, 200, 62, 96],
+        data: [98, 97, 89, 87, 83, 75, 70],
         borderColor: "#E72C4B",
         backgroundColor: "#E72C4B",
       },
       {
         label: "Leads",
-        data: [59, 85, 76, 96, 38, 51, 17],
+        data: [99, 97, 93, 88, 85, 78, 73],
         borderColor: "#1164BB",
         backgroundColor: "#1164BB",
       },
       {
         label: "Growth",
-        data: [10, 82, 45, 68, 24, 44, 76],
+        data:[100, 96, 90, 86, 84, 77, 73],
         borderColor: "#F5841F",
         backgroundColor: "#F5841F",
       },
@@ -96,19 +96,19 @@ const SeonatorTurnon = () => {
         datasets: [
           {
             label: "Natural traffic",
-            data: [35, 76, 48, 89, 200, 62, 97],
+            data: [98, 97, 89, 87, 83, 75, 70],
             borderColor: "#E72C4B",
             backgroundColor: "#E72C4B",
           },
           {
             label: "Leads",
-            data: [59, 85, 76, 96, 38, 51, 17],
+            data: [99, 97, 93, 88, 85, 78, 73],
             borderColor: "#1164BB",
             backgroundColor: "#1164BB",
           },
           {
             label: "Growth",
-            data: [10, 82, 45, 68, 24, 44, 76],
+            data:[100, 96, 90, 86, 84, 77, 73],
             borderColor: "#F5841F",
             backgroundColor: "#F5841F",
           },
