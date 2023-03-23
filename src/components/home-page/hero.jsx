@@ -13,7 +13,7 @@ const Hero = () => {
         <div className="flex flex-col lg:flex-row justify-between container mx-auto lg:px-[120px] px-2 ">
           <div className="pt-[80px] ">
             <h1 className="text-2xl text-white font-semibold">
-              Welcome to Rankfast Solutions
+              Welcome to Rankfast 
             </h1>
             <h2 className="text-6xl md:text-7xl text-white  uppercase  font-[Impact]">
             Innovate Transform and <span className="text-[#E72C4B]">Rankfast Forward</span>
