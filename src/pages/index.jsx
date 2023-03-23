@@ -16,6 +16,11 @@ import SeonatorTurnon from "@/components/home-page/seonator-turnon";
 export default function Home() {
   return (
     <>
+    <Head>
+      <title>Rankfast - Leading SEO Agency for Customized Online Solutions</title>
+      <meta name="description" content="Rankfast is a top SEO agency that provides customized solutions to improve your online presence and search engine rankings. Their services include SEO, content marketing, link building, UI UX design, and more. They are also committed to education, offering free online courses through their search engine Coursenator." />
+      <meta name="keywords" content="SEO agency, online presence, search engine optimization, content marketing, link building, UI UX design, education, Coursenator."/>
+    </Head>
       <OuterLayout>
         <Hero />
         <RecentProject />
