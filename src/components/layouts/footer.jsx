@@ -60,10 +60,10 @@ const Footer = () => {
               What we offer
             </h2>
             <ul className="flex flex-col gap-4 pl-5">
-              <li className="text-white list-disc">service -1</li>
-              <li className="text-white list-disc">service -2</li>
-              <li className="text-white list-disc">service -3</li>
-              <li className="text-white list-disc">service -4</li>
+              <li className="text-white list-disc"> Link building strategies</li>
+              <li className="text-white list-disc">Keyword research</li>
+              <li className="text-white list-disc">Content management</li>
+              <li className="text-white list-disc"> Conversion rate optimization</li>
             </ul>
           </div>
         </>

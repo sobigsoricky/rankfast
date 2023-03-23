@@ -41,7 +41,7 @@ const services = [
 const Services = () => {
   return (
     <>
-      <div className="container bg-white mx-auto lg:px-[120px] px-2 py-[146px]">
+      <div id="services" className="container bg-white mx-auto lg:px-[120px] px-2 py-[146px]">
         <h2 className="uppercase mt-1 text-black text-4xl md:text-6xl md:leading-[70px] font-[impact] mb-10">
           WE TURN TRAFFIC INTO <br />{" "}
           <span className="text-[#E72C4B]"> REVENUE STREAMLINES</span>

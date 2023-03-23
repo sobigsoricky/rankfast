@@ -64,7 +64,7 @@ const Team = () => {
           },
         ]}
         draggable
-        slidesToShow={1.5}
+        slidesToShow={1.01}
         slidesToScroll={1}
         rewind
         className="w-full "
