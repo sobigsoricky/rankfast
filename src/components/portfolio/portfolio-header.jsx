@@ -13,7 +13,7 @@ const PortfolioHeader = () => {
             {" "}
             Secure your place
           </p>
-          <h1 className="text-5xl lg:text-9xl font-[impact] text-white">Our Portfolio</h1>
+          <h1 className="text-4xl lg:text-9xl font-[impact] text-white">Our Portfolio</h1>
         </div>
       </div>
     </div>

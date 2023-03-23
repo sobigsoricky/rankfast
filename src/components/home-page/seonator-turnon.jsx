@@ -70,19 +70,19 @@ const SeonatorTurnon = () => {
         datasets: [
           {
             label: "Natural traffic",
-            data: [392, 252, 376, 302, 319, 214, 388],
+            data: [215, 250, 282, 292, 325, 356, 368],
             borderColor: "#E72C4B",
             backgroundColor: "#E72C4B",
           },
           {
             label: "Leads",
-            data: [236, 257, 229, 314, 378, 211, 315],
+            data: [210, 227, 255, 305, 320, 343, 376],
             borderColor: "#1164BB",
             backgroundColor: "#1164BB",
           },
           {
             label: "Growth",
-            data:  [244, 300, 291, 266, 385, 225, 382],
+            data:  [201, 218, 230, 287, 343, 363, 390],
             borderColor: "#F5841F",
             backgroundColor: "#F5841F",
           },

@@ -4,27 +4,27 @@ import React from "react";
 const ProcessHeader = () => {
   return (
     <>
-      <div className="px-[120px] bg-[#E72C4B] ">
+      <div className="md:px-[120px] px-2 bg-[#E72C4B] ">
         <div className="container mx-auto py-[200px]">
           <p className="text-white text-lg">To the perfection</p>
           <h1 className="text-white font-[impact] text-5xl  md:text-8xl">Our Process</h1>
         </div>
       </div>
 
-      <div className="px-[120px] bg-gradient-to-b from-[#E72C4B] to-[#212121] py-8 max-w-full overflow-scroll">
+      <div className="md:px-[120px] px-2 bg-gradient-to-b from-[#E72C4B] to-[#212121] py-8 max-w-full overflow-scroll">
         <div className="container mx-auto flex flex-wrap  lg:flex-row justify-center items-center">
-          <div className="grid ">
+          <div className="grid max-w-full">
             <div className="flex items-center justify-between">
               <div className="flex flex-col items-center mr-6">
                 
                 <div>
-                  <div className="text-3xl  font-bold text-white ">Step 1</div>
+                  <div className="text-base md:text-3xl font-semibold text-white w-[100px] text-center">Step 1</div>
                 </div>
                 <div className="w-px h-10 bg-gray-300" />
               </div>
               <div className="flex flex-col pb-6 sm:items-center sm:flex-row sm:pb-0">
                 <div className="max-w-1/2">
-                  <p className="text-xl text-white font-light sm:text-base text-center">
+                  <p className="md:text-sm text-white font-light text-xs ">
                   Technical SEO audit
                   </p>
                   <svg
@@ -47,13 +47,13 @@ const ProcessHeader = () => {
               <div className="w-px h-10 bg-gray-300" />
                 
                 <div>
-                  <div className="text-3xl  font-bold text-white ">Step 2</div>
+                  <div className="text-base md:text-3xl   font-semibold text-white w-[100px] text-center">Step 2</div>
                 </div>
                 <div className="w-px h-10 bg-gray-300" />
               </div>
               <div className="flex flex-col pb-6 sm:items-center sm:flex-row sm:pb-0">
                 <div className="max-w-1/2">
-                  <p className="text-xl text-white font-light sm:text-base text-center">
+                  <p className="md:text-sm text-white font-light text-xs ">
                   On page keyword research
                   </p>
                   <svg
@@ -76,13 +76,13 @@ const ProcessHeader = () => {
               <div className="w-px h-10 bg-gray-300" />
                 
                 <div>
-                  <div className="text-3xl  font-bold text-white ">Step 3</div>
+                  <div className="text-base md:text-3xl   font-semibold text-white w-[100px] text-center">Step 3</div>
                 </div>
                 <div className="w-px h-10 bg-gray-300" />
               </div>
               <div className="flex flex-col pb-6 sm:items-center sm:flex-row sm:pb-0">
                 <div className="max-w-1/2">
-                  <p className="text-xl text-white font-light sm:text-base text-center">
+                  <p className="md:text-sm text-white font-light text-xs ">
                   Topical authority building
                   </p>
                   <svg
@@ -105,13 +105,13 @@ const ProcessHeader = () => {
               <div className="w-px h-10 bg-gray-300" />
                 
                 <div>
-                  <div className="text-3xl  font-bold text-white ">Step 4</div>
+                  <div className="text-base md:text-3xl   font-semibold text-white w-[100px] text-center">Step 4</div>
                 </div>
                 <div className="w-px h-10 bg-gray-300" />
               </div>
               <div className="flex flex-col pb-6 sm:items-center sm:flex-row sm:pb-0">
                 <div className="max-w-1/2">
-                  <p className="text-xl text-white font-light sm:text-base text-center">
+                  <p className="md:text-sm text-white font-light text-xs ">
                   Competitor analysis
                   </p>
                   <svg
@@ -134,13 +134,13 @@ const ProcessHeader = () => {
               <div className="w-px h-10 bg-gray-300" />
                 
                 <div>
-                  <div className="text-3xl  font-bold text-white ">Step 5</div>
+                  <div className="text-base md:text-3xl   font-semibold text-white w-[100px] text-center">Step 5</div>
                 </div>
                 <div className="w-px h-10 bg-gray-300" />
               </div>
               <div className="flex flex-col pb-6 sm:items-center sm:flex-row sm:pb-0">
                 <div className="max-w-1/2">
-                  <p className="text-xl text-white font-light sm:text-base text-center">
+                  <p className="md:text-sm text-white font-light text-xs ">
                   Link building management
                   </p>
                   <svg
@@ -163,13 +163,13 @@ const ProcessHeader = () => {
               <div className="w-px h-10 bg-gray-300" />
                 
                 <div>
-                  <div className="text-3xl  font-bold text-white ">Step 6</div>
+                  <div className="text-base md:text-3xl   font-semibold text-white w-[100px] text-center">Step 6</div>
                 </div>
                 <div className="w-px h-10 bg-gray-300" />
               </div>
               <div className="flex flex-col pb-6 sm:items-center sm:flex-row sm:pb-0">
                 <div className="max-w-1/2">
-                  <p className="text-xl text-white font-light sm:text-base text-center">
+                  <p className="md:text-sm text-white font-light text-xs ">
                   Content management (Update, merge, delete)
                   </p>
                   <svg
@@ -192,13 +192,13 @@ const ProcessHeader = () => {
               <div className="w-px h-10 bg-gray-300" />
                 
                 <div>
-                  <div className="text-3xl  font-bold text-white ">Step 7</div>
+                  <div className="text-base md:text-3xl   font-semibold text-white w-[100px] text-center">Step 7</div>
                 </div>
                 <div className="w-px h-10 bg-gray-300" />
               </div>
               <div className="flex flex-col pb-6 sm:items-center sm:flex-row sm:pb-0">
                 <div className="max-w-1/2">
-                  <p className="text-xl text-white font-light sm:text-base text-center">
+                  <p className="md:text-sm text-white font-light text-xs ">
                   Influencer campaigns
                   </p>
                   <svg
@@ -221,13 +221,13 @@ const ProcessHeader = () => {
               <div className="w-px h-10 bg-gray-300" />
                 
                 <div>
-                  <div className="text-3xl  font-bold text-white ">Step 8</div>
+                  <div className="text-base md:text-3xl   font-semibold text-white w-[100px] text-center">Step 8</div>
                 </div>
                 {/* <div className="w-px h-10 bg-gray-300" /> */}
               </div>
               <div className="flex flex-col pb-6 sm:items-center sm:flex-row sm:pb-0">
                 <div className="max-w-1/2">
-                  <p className="text-xl text-white font-light sm:text-base text-center">
+                  <p className="md:text-sm text-white font-light text-xs ">
                   Conversion rate optimization
                   </p>
                   <svg

@@ -31,7 +31,7 @@ const Footer = () => {
       <div className="container mx-auto lg:px-[120px] px-2 pt-11 flex flex-col lg:flex-row justify-between items-start gap-4">
         <div className="flex flex-col gap-2">
           <Image src="https://iili.io/HXwg83F.png" width={180} height={100} />
-          <Image src="https://iili.io/HXwg4Tv.png" width={180} height={100} />
+          <Image src="https://iili.io/HhP6gb2.md.png" width={180} height={100} className="bg-white"/>
         </div>
         <>
           <div className="flex flex-col items-stretch">
