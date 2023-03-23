@@ -16,7 +16,7 @@ const Hero = () => {
               Welcome to Rankfast Solutions
             </h1>
             <h2 className="text-6xl md:text-8xl text-white  uppercase  font-[Impact]">
-              More then just an Seo Agency
+              More than just an Seo Agency
             </h2>
           </div>
           <div className="relative w-full h-full  max-w-[508px] max-h-[700px]">

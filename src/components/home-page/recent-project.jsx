@@ -57,7 +57,7 @@ const RecentProject = () => {
         <div className="block max-w-[540px] w-full group overflow-clip mr-8">
           <img
             alt="Art"
-            src="https://iili.io/HhPjB29.png"
+            src="https://iili.io/HwBU8Av.webp"
             className="h-64 w-full object-cover sm:h-80 lg:h-96 group-hover:scale-110  duration-500"
           />
           <div className="bg-black p-6 relative z-10">
