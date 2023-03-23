@@ -48,7 +48,7 @@ const members = [
 
 const Team = () => {
   return (
-    <div className="container bg-white mx-auto lg:px-[120px] px-2 py-[146px]">
+    <div className="container bg-white mx-auto lg:px-[120px] px-2 py-[106px]">
       <h2 className="uppercase mt-1 mb-10 text-black text-4xl md:text-6xl  font-[impact] md:leading-[70px]">
         Our team of
         <br /> <span className="text-[#E72C4B]"> Experts</span>
@@ -59,7 +59,7 @@ const Team = () => {
           {
             breakpoint: 864,
             settings: {
-              slidesToShow: 3.1,
+              slidesToShow: 4,
             },
           },
         ]}
@@ -85,7 +85,7 @@ const Team = () => {
               <h2 className="text-xl font-extralight  font-[impact] text-white my-1">
                 {member.name}
               </h2>
-              <p className="text-sm font-semibold text-white ">{member.designation}</p>
+              <p className="text-xs font-semibold text-white ">{member.designation}</p>
               {/* <p className="text-white font-semibold">
                 Can code as fast as flash runs!!
               </p> */}
