@@ -38,7 +38,7 @@ const Hero = () => {
             Contact us
           </Link>
           <Link
-            href="#services"
+            href="#rev-gen"
             className="text-center w-full md:w-auto border-2 border-white md:px-24 py-5  font-medium text-white"
           >
             View Results

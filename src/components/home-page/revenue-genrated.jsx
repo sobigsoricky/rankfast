@@ -9,7 +9,7 @@ const RevenueGenrated = () => {
           <Image src="https://iili.io/HXjtmGf.md.webp" fill />
         </div>
         <div className="relative z-50 lg:px-[120px] px-2 mx-auto container py-[100px]">
-          <h3 className="text-5xl lg:text-9xl  font-[impact] text-white">
+          <h3 id="rev-gen" className="text-5xl lg:text-9xl  font-[impact] text-white">
             $2,345,000{" "}
             
           </h3>
