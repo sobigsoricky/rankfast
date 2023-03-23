@@ -28,7 +28,7 @@ export default function Home() {
         <AuditReportForm />
         <SeonatorTurnon/>
         <RevenueGenrated />
-        <Testimonials />
+        {/* <Testimonials /> */}
         <Team />
         <BookMeating />
       </OuterLayout>
