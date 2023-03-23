@@ -28,14 +28,14 @@ const RecentProject = () => {
         <div className="block max-w-[540px] w-full group overflow-clip mr-8">
           <img
             alt="Art"
-            src="https://iili.io/HhP1dpp.png"
+            src="https://productscdn.notifyvisitors.com/products/wp-content/uploads/2021/05/02051347/nv-logo-_2_-1.png"
             className="h-64 w-full object-cover sm:h-80 lg:h-96 group-hover:scale-110  duration-500"
           />
           <div className="bg-black p-6 relative z-10">
-            <h3 className=" text-lg font-bold text-white sm:text-lg">Australian opal direct</h3>
-            <p className="mt-4 max-w-sm text-white text-4xl">270% growth</p>
+            <h3 className=" text-lg font-bold text-white sm:text-lg">NotifyVisitors</h3>
+            <p className="mt-4 max-w-sm text-white text-4xl">60% growth</p>
           </div>
-          <Link href="https://australianopaldirect.com/" target={"_blank"} className=" duration-500 bg-black text-white text-center w-full py-4 group-hover:bg-[#E72C4B] block">
+          <Link href="https://www.notifyvisitors.com/" target={"_blank"} className=" duration-500 bg-black text-white text-center w-full py-4 group-hover:bg-[#E72C4B] block">
             View project
           </Link>
         </div>
