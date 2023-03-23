@@ -19,22 +19,27 @@ const members = [
     designation: "SEO Director",
   },
   {
+    img:"https://iili.io/HwJFXRt.md.jpg",
     name: "Tripti Pahwa",
     designation: "LinkBuilding Queen",
   },
   {
+    img:"https://iili.io/Hwdaque.md.jpg",
     name: " Preeti Tiwari",
     designation: "SEO Analyst",
   },
   {
+    img:"https://iili.io/Hwdk5Zv.md.png",
     name: "Ajitesh Mishra",
     designation: "Technical SEO Specialist ",
   },
   {
+    img:"https://iili.io/HwdRcrP.md.jpg",
     name: " Abhijay Rajput",
     designation: "Conversion Rate Optimizer",
   },
   {
+    img:"https://iili.io/HwdEYCu.md.jpg",
     name: "Kunal Goel",
     designation: "SEO Tool Builder",
   },
@@ -54,7 +59,7 @@ const Team = () => {
           {
             breakpoint: 864,
             settings: {
-              slidesToShow: 3,
+              slidesToShow: 3.1,
             },
           },
         ]}
@@ -74,13 +79,13 @@ const Team = () => {
               alt=""
               height={300}
               width={300}
-              className="w-full object-center object-contain"
+              className="rounded-full w-full h-full object-center object-cover overflow-clip"
             />
-            <div className="absolute z-10 bottom-0 p-4 w-full h-full flex flex-col justify-end items-start bg-gradient-to-t from-[#000000CC]   ">
-              <h2 className="text-xl  font-[impact] text-white my-1">
+            <div className="rounded-full absolute z-10 bottom-0 p-4 w-full h-full flex flex-col justify-end items-center bg-gradient-to-t from-[#000000CC]   overflow-clip pb-8">
+              <h2 className="text-xl font-extralight  font-[impact] text-white my-1">
                 {member.name}
               </h2>
-              <p className="text-sm font-bold text-[#E72C4B] break-words">{member.designation}</p>
+              <p className="text-sm font-semibold text-white ">{member.designation}</p>
               {/* <p className="text-white font-semibold">
                 Can code as fast as flash runs!!
               </p> */}

@@ -55,7 +55,7 @@ const PortfolioGrid = () => {
             src={company.img}
             width={400}
             height={200}
-            className="h-[200px] bg-[#e72c4b] object-contain"
+            className="h-[200px] bg-[#212121] object-scale-down"
           />
           <div className="p-4">
             <h3 className="text-2xl font-bold mb-2">{company.name}</h3>

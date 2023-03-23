@@ -34,7 +34,7 @@ const testimonials = [
 
 const Testimonials = () => {
   return (
-    <div className="lg:px-[120px] px-2 container mx-auto">
+    <div className="lg:px-[120px] px-2 container mx-auto py-10">
       <h2 className="text-6xl font-[impact] text-black mb-8">TESTIMONIALS</h2>
 
       <Glider

@@ -120,7 +120,7 @@ const SeonatorTurnon = () => {
 
   return (
     <div className="bg-white container mx-auto lg:px-[120px] px-2 py-10">
-      <h2 className="font-[impact] text-7xl">
+      <h2 className="font-[impact] text-5xl md:text-7xl">
         See how we make <span className="text-[#E72C4B]">the difference</span>
       </h2>
       <div className="md:p-10  ">

@@ -6,7 +6,7 @@ const RecentProject = () => {
   return (
     <div className="container bg-white mx-auto lg:px-[120px] px-2 py-[146px] ">
       <h3 className="text-lg font-bold text-black">Check out</h3>
-      <h2 className="uppercase mt-1 text-black text-6xl font- leading-[70px] font-[Impact]">
+      <h2 className="uppercase mt-1 text-black text-6xl font- leading-[70px] font-[Impact] mb-10">
         Our Recent <br /> <span className="text-[#E72C4B]">big projects</span>
       </h2>
 
@@ -20,7 +20,7 @@ const RecentProject = () => {
           },
         ]}
         draggable
-        slidesToShow={1.5}
+        slidesToShow={1.01}
         slidesToScroll={1}
         rewind
         className=" justify-between w-full "
