@@ -12,7 +12,7 @@ const Navbar = () => {
             <div className="flex-1 md:flex md:items-center md:gap-12">
               <Link className=" text-white font-[impact] flex flex-col justify-center " href="/">
                {/* Rankfast */}
-                <Image src="https://iili.io/HhP6gb2.md.png" alt="" width={200} height={60} className="z-10"/>
+                <Image src="https://iili.io/HwC1qX4.md.png" alt="" width={150} height={60} className="z-10"/>
                 {/* <h2 className="-mt-3 text-2xl font-light">Rankfast</h2> */}
               </Link>
             </div>
@@ -84,10 +84,10 @@ const Navbar = () => {
                   <button onClick={e => setShowMenu(!showMenu)} className="rounded  p-2 text-white transition hover:text-gray-600/75">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      className="h-5 w-5"
+                      className="h-7 w-7"
                       fill="none"
                       viewBox="0 0 24 24"
-                      stroke="currentColor"
+                      stroke="white"
                       stroke-width="2"
                     >
                       <path
