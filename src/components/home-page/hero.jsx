@@ -15,8 +15,8 @@ const Hero = () => {
             <h1 className="text-2xl text-white font-semibold">
               Welcome to Rankfast Solutions
             </h1>
-            <h2 className="text-6xl md:text-8xl text-white  uppercase  font-[Impact]">
-              More than just an Seo Agency
+            <h2 className="text-6xl md:text-7xl text-white  uppercase  font-[Impact]">
+            Innovate Transform and <span className="text-[#E72C4B]">Rankfast Forward</span>
             </h2>
           </div>
           <div className="relative w-full h-full  max-w-[508px] max-h-[700px]">
@@ -46,7 +46,7 @@ const Hero = () => {
         </div>
       </div>
       <div className="bg-[#212121] flex items-center w-full gap-8    py-11">
-        <div className="container mx-auto lg:px-[120px] px-2 flex flex-col md:flex-row gap-4">
+        <div className="container mx-auto lg:px-[120px] px-2 flex flex-col md:flex-row gap-10">
           <h3 className="font-semibold text-white ">Results</h3>
 
           <Glider
@@ -54,7 +54,7 @@ const Hero = () => {
               {
                 breakpoint: 864,
                 settings: {
-                  slidesToShow: 3,
+                  slidesToShow: 3.2,
                 },
               },
             ]}
