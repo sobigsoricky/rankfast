@@ -8,11 +8,17 @@ const Companies = [
     details:
       "An Indian multinational educational technology company, headquartered in Bangalore, Karnataka, India. It was founded in 2011 by Byju Raveendran and Divya Gokulnath. As of March 2022, Byju's is valued at US$22 billion and the company claims to have over 115 million registered students.",
   },
+  // {
+  //   img:"https://cdn11.bigcommerce.com/s-rntsv/images/stencil/original/logo_1653105925__29174.original.png",
+  //   name: "Australian Opal Direct",
+  //   details:
+  //     "A brand that specializes in designing and creating custom-made Opal jewelry. With over 30 years of experience in the Opal industry, the brand is committed to providing the best quality Opal gemstones at competitive prices.",
+  // },
   {
-    img:"https://cdn11.bigcommerce.com/s-rntsv/images/stencil/original/logo_1653105925__29174.original.png",
-    name: "Australian Opal Direct",
+    img:"https://iili.io/HNzMUqQ.png",
+    name: "Builder.ai",
     details:
-      "A brand that specializes in designing and creating custom-made Opal jewelry. With over 30 years of experience in the Opal industry, the brand is committed to providing the best quality Opal gemstones at competitive prices.",
+      "Builder.ai can build any app you can imagine, to your exact specifications.",
   },
   {
     img:"https://iili.io/HhbKLnj.png",
