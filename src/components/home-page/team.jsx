@@ -2,6 +2,7 @@ import Image from "next/image";
 import React from "react";
 import Glider from "react-glider";
 import "glider-js/glider.min.css";
+import Link from "next/link";
 const members = [
   {
     img: "https://iili.io/HhQLDvt.md.jpg",
