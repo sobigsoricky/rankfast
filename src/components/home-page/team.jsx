@@ -77,7 +77,7 @@ const Team = () => {
               <h2 className="text-xl font-extralight  font-[impact] text-[#212121] ">
                 {member.name}
               </h2>
-              <p className="text-lg font-light text-[#E72C4B] ">{member.designation}</p>
+              <p className="text-lg font-normal text-[#e72c4b] ">{member.designation}</p>
               {/* <p className="text-white font-semibold">
                 Can code as fast as flash runs!!
               </p> */}

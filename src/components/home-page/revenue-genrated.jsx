@@ -23,19 +23,19 @@ const RevenueGenrated = () => {
       <div className="lg:px-[120px] px-2 mx-auto container flex md:flex-row flex-col flex-wrap bg-white py-11">
         <div className="box py-40 border border-[#00000033] text-center basis-1 md:basis-2/4 lg:basis-1/4">
           <h3 className="text-5xl  font-[impact] ">
-            45+ <span className="text-lg block uppercase">satisfied cliens</span>
+            45+ <span className="text-lg block uppercase">satisfied clients</span>
           </h3>
         </div>
 
         <div className="box py-40 border border-[#00000033] text-center basis-1 md:basis-2/4 lg:basis-1/4">
           <h3 className="text-5xl  font-[impact] ">
-            6,000,000+ <span className="text-lg block uppercase">Natural traffic</span>
+            6,000,000+ <span className="text-lg block uppercase">Organic traffic</span>
           </h3>
         </div>
 
         <div className="box py-40 border border-[#00000033] text-center basis-1 md:basis-2/4 lg:basis-1/4">
           <h3 className="text-5xl  font-[impact] ">
-            2 million + <span className="text-lg block uppercase">revenue genrated</span>
+            2 million + <span className="text-lg block uppercase">Revenue genrated</span>
           </h3>
         </div>
 
