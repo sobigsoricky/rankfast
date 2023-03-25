@@ -1,9 +1,45 @@
 import React from "react";
-import Glider from "react-glider";
-import "glider-js/glider.min.css";
+import Slider from "react-slick";
 import Image from "next/image";
 import Link from "next/link";
+
 const Hero = () => {
+  const settings = {
+    dots: false,
+    arrows:false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3.5,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3.5,
+          slidesToScroll: 1,
+      
+         
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+         
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
+  };
   return (
     <div>
       <div
@@ -16,7 +52,8 @@ const Hero = () => {
               Welcome to Rankfast - Your SEO Partner
             </h1>
             <h2 className="text-6xl md:text-7xl text-white  uppercase  font-[Impact]">
-            Innovate Transform and <span className="text-[#E72C4B]">Rankfast Forward</span>
+              Innovate Transform and{" "}
+              <span className="text-[#E72C4B]">Rankfast Forward</span>
             </h2>
           </div>
           <div className="relative w-full h-full  max-w-[508px] max-h-[700px]">
@@ -46,27 +83,17 @@ const Hero = () => {
         </div>
       </div>
       <div className="bg-[#212121] flex items-center w-full gap-8    py-11">
-        <div className="container mx-auto lg:px-[120px] px-2 flex flex-col md:flex-row gap-10">
-          <h3 className="font-semibold text-white ">Results</h3>
+        <div className="container mx-auto lg:px-[120px] px-2  flex-col md:flex-row gap-10">
+          <h3 className="font-semibold text-white md:absolute">Results</h3>
+<div className="md:ml-32">
 
-          <Glider
-            responsive={[
-              {
-                breakpoint: 864,
-                settings: {
-                  slidesToShow: 3.2,
-                },
-              },
-            ]}
-            draggable
-            slidesToShow={1.5}
-            slidesToScroll={1}
-            rewind
-            className=" justify-between w-full"
-          >
-            <div className="text-white  font-light">45+ SATISFIED CLIENS</div>
+
+          <Slider {...settings} >
+            <div className="text-white  font-light ">
+              45+ SATISFIED CLIENTS
+            </div>
             <div className="text-white  font-light">
-              6,000,000+ NATURAL TRAFFIC
+              6,000,000+ ORGANIC TRAFFIC
             </div>
             <div className="text-white  font-light">
               2 million + REVENUE GENRATED
@@ -74,7 +101,8 @@ const Hero = () => {
             <div className="text-white  font-light">
               800% Average increase in website traffic
             </div>
-          </Glider>
+          </Slider>
+          </div>
         </div>
       </div>
     </div>

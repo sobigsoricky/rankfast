@@ -54,45 +54,37 @@ const Team = () => {
         <br /> <span className="text-[#E72C4B]"> Experts</span>
       </h2>
 
-      <Glider
-        responsive={[
-          {
-            breakpoint: 864,
-            settings: {
-              slidesToShow: 4,
-            },
-          },
-        ]}
-        draggable
-        slidesToShow={1.01}
-        slidesToScroll={1}
-        rewind
-        className="w-full "
+      <div
+        className="w-full flex flex-wrap gap-10 justify-center md:justify-between"
       >
         {members?.map((member, i) => (
           <div
             key={i}
-            className="relative mr-4  overflow-hidden"
+            className="relative  mt-10"
           >
+            <div className="relative w-full h-full max-w-[280px] max-h-[280px]">
+
+            
             <Image
               src={member.img}
               alt=""
-              height={300}
-              width={300}
-              className="rounded-full w-full h-full object-center object-cover overflow-clip"
+              height={280}
+              width={280}
+              className="rounded-full   h-full object-cover  block"
             />
-            <div className="rounded-full absolute z-10 bottom-0 p-4 w-full h-full flex flex-col justify-end items-center bg-gradient-to-t from-[#000000CC]   overflow-clip pb-8">
-              <h2 className="text-xl font-extralight  font-[impact] text-white my-1">
+            </div>
+            <div className="text-center mt-4">
+              <h2 className="text-xl font-extralight  font-[impact] text-[#212121] ">
                 {member.name}
               </h2>
-              <p className="text-xs font-semibold text-white ">{member.designation}</p>
+              <p className="text-lg font-light text-[#E72C4B] ">{member.designation}</p>
               {/* <p className="text-white font-semibold">
                 Can code as fast as flash runs!!
               </p> */}
             </div>
           </div>
         ))}
-      </Glider>
+      </div>
     </div>
   );
 };

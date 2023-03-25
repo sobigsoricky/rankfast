@@ -24,7 +24,7 @@ export default function Home() {
       <OuterLayout>
         <Hero />
         <RecentProject />
-        <Services />
+        <Services /> 
         <AuditReportForm />
         <SeonatorTurnon/>
         <RevenueGenrated />

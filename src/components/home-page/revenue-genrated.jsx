@@ -2,7 +2,7 @@ import Image from "next/image";
 import React from "react";
 
 const RevenueGenrated = () => {
-  return (
+  return ( 
     <>
       <div className="relative mt-11">
         <div className="absolute w-full h-full flex flex-wrap justify-center object-contain   overflow-hidden">

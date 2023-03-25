@@ -38,7 +38,7 @@ const SeonatorTurnon = () => {
     labels,
     datasets: [
       {
-        label: "Natural traffic",
+        label: "organic traffic",
         data: [182, 145, 119, 137, 186, 143, 161],
         borderColor: "#E72C4B",
         backgroundColor: "#E72C4B",
@@ -69,7 +69,7 @@ const SeonatorTurnon = () => {
         labels,
         datasets: [
           {
-            label: "Natural traffic",
+            label: "organic traffic",
             data: [215, 250, 282, 292, 325, 356, 368],
             borderColor: "#E72C4B",
             backgroundColor: "#E72C4B",
@@ -95,7 +95,7 @@ const SeonatorTurnon = () => {
         labels,
         datasets: [
           {
-            label: "Natural traffic",
+            label: "organic traffic",
             data: [182, 145, 119, 137, 186, 143, 161, 400],
             borderColor: "#E72C4B",
             backgroundColor: "#E72C4B",
