@@ -35,7 +35,7 @@ const members = [
     linkedIn: "",
   },
   {
-    img: "https://iili.io/Hwdk5Zv.md.png",
+    img: "https://www.bsn.eu/wp-content/uploads/2016/12/user-icon-image-placeholder-300-grey.jpg",
     name: "Ajitesh Mishra",
     designation: "Technical SEO Specialist ",
     linkedIn: "",
