@@ -8,13 +8,13 @@ const members = [
     img: "https://iili.io/HhQLDvt.md.jpg",
     name: "Pranav Bajaj",
     designation: "Founder and SEO Specialist",
-    linkedIn: "",
+    linkedIn: "https://www.linkedin.com/in/pranav-bajaj-rankfast/",
   },
   {
     img: "https://iili.io/HhZVk8P.md.jpg",
     name: "Pranay Mishra",
     designation: "Co-Founder and SEO Specialist",
-    linkedIn: "",
+    linkedIn: "https://www.linkedin.com/in/pranay-mishra-rankfast/",
   },
   {
     img: "https://iili.io/HhZhAwF.md.jpg",
@@ -81,8 +81,12 @@ const Team = () => {
               <p className="text-lg font-normal text-[#e72c4b] ">
                 {member.designation}
               </p>
-              <Link href={member.linkedIn} target={"_blank"} className="flex justify-center mt-2">
-                  
+              {member.linkedIn ? (
+                <Link
+                  href={member.linkedIn}
+                  target={"_blank"}
+                  className="flex justify-center mt-2"
+                >
                   <svg
                     width="24"
                     height="24"
@@ -95,7 +99,10 @@ const Team = () => {
                       fill="#212121"
                     />
                   </svg>
-                  </Link>
+                </Link>
+              ) : (
+                ""
+              )}
               {/* <p className="text-white font-semibold">
                 Can code as fast as flash runs!!
               </p> */}

@@ -58,10 +58,10 @@ const Services = () => {
                 </div>
                 <div>
 
-                <h2 className={`text-3xl font-[impact]  md:group-hover:text-white duration-500 my-2 ${i%2 == 0? "text-white":"text-[#212121]"}`}>
+                <h2 className={`text-3xl font-[impact] lg:text-[#212121] md:group-hover:text-white duration-500 my-2 ${i%2 == 0? "text-white":"text-[#212121]"}`}>
                   {service.name}
                 </h2>
-                <p className={` text-lg md:group-hover:text-white duration-500  ${i%2 == 0? "text-white":"text-[#2F2E2F]"}`}>
+                <p className={` text-lg md:group-hover:text-white duration-500 lg:text-[#2F2E2F]  ${i%2 == 0? "text-white":"text-[#2F2E2F]"}`}>
                   {service.description}
                 </p>
                 </div>
