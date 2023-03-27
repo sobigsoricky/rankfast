@@ -26,7 +26,7 @@ const AuditReportForm = () => {
   return (
     <>
       <div className=" container mx-auto lg:px-[120px] px-2">
-        <div className="bg-[#212121] py-14 px-11 flex md:flex-row flex-col gap-4">
+        <div className="bg-[#212121] p-4 lg:py-14 lg:px-11 flex md:flex-row flex-col gap-4">
           <div className="text-white md:w-2/5">
             <h3 className="text-4xl font-[impact]">
               REQUEST A FREE AUDIT REPORT
@@ -44,20 +44,20 @@ const AuditReportForm = () => {
               <div className="flex flex-col  w-full gap-3">
                 <input
                   type="text"
-                  className="text-[#EEEEEE] bg-transparent border border-[#FFFFFF33] py-2 px-8 w-full "
+                  className="text-[#EEEEEE] bg-transparent border border-[#FFFFFF33] py-4 px-8 w-full "
                   placeholder="Enter you email"
                 />
                 <input
                   type="text"
-                  className="text-[#EEEEEE] bg-transparent border border-[#FFFFFF33] py-2 px-8 w-full"
+                  className="text-[#EEEEEE] bg-transparent border border-[#FFFFFF33] py-4 px-8 w-full"
                   placeholder="Enter your website URL"
                 />
               </div>
               <button
                 type="submit"
-                className="bg-white hover:bg-[#E72C4B] hover:text-white duration-500  flex justify-center py-6  items-center  group px-28 md:py-2 relative overflow-hidden"
+                className="bg-white hover:bg-[#E72C4B] hover:text-white duration-500  flex justify-center py-8  items-center  group px-28 md:py-2 relative overflow-hidden"
               >
-                <span className="text-lg font-semibold text-white absolute left-[-200%] group-hover:left-0 w-full duration-500">
+                <span className="text-lg font-semibold text-white absolute left-[-200%] group-hover:left-0 w-full duration-500 py-6 ">
                   Send
                 </span>
                 <svg

@@ -20,26 +20,26 @@ const RevenueGenrated = () => {
         </div>
       </div>
 
-      <div className="lg:px-[120px] px-2 mx-auto container flex md:flex-row flex-col flex-wrap bg-white py-11">
-        <div className="box py-40 border border-[#00000033] text-center basis-1 md:basis-2/4 lg:basis-1/4">
+      <div className="lg:px-[120px] px-2 mx-auto container grid justify-center grid-cols-1 sm:grid-cols-2 xl:grid-cols-4  bg-white py-11">
+        <div className="box py-10 lg:py-20  border border-[#00000033] text-center">
           <h3 className="text-5xl  font-[impact] ">
             45+ <span className="text-lg block uppercase">satisfied clients</span>
           </h3>
         </div>
 
-        <div className="box py-40 border border-[#00000033] text-center basis-1 md:basis-2/4 lg:basis-1/4">
+        <div className="box py-10 lg:py-20   border border-[#00000033] text-center ">
           <h3 className="text-5xl  font-[impact] ">
             6,000,000+ <span className="text-lg block uppercase">Organic traffic</span>
           </h3>
         </div>
 
-        <div className="box py-40 border border-[#00000033] text-center basis-1 md:basis-2/4 lg:basis-1/4">
+        <div className="box py-10 lg:py-20   border border-[#00000033] text-center ">
           <h3 className="text-5xl  font-[impact] ">
             2 million + <span className="text-lg block uppercase">Revenue genrated</span>
           </h3>
         </div>
 
-        <div className="box py-40 border border-[#00000033] text-center basis-1 md:basis-2/4 lg:basis-1/4">
+        <div className="box py-10 lg:py-20   border border-[#00000033] text-center ">
           <h3 className="text-5xl  font-[impact] ">
            800%  <span className="text-lg block">Average increase in website traffic</span>
           </h3>
@@ -54,7 +54,7 @@ const RevenueGenrated = () => {
     -moz-transition: background-position 1s;
     transition: background-position 500ms;
     background-position: 00% -100%;
-    overflow:clip
+    
 }
 
 .box:hover {

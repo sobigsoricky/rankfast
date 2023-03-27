@@ -3,7 +3,6 @@ import Link from "next/link";
 import React from "react";
 
 const Footer = () => {
-
   const submitForm = (event) => {
     console.log(event);
     event.preventDefault();
@@ -14,7 +13,6 @@ const Footer = () => {
         Accept: "application/json",
       },
       body: JSON.stringify({
-      
         email: event.target[0].value,
         website: event.target[1].value,
       }),
@@ -28,46 +26,71 @@ const Footer = () => {
   };
   return (
     <div className="bg-[#111111] mt-40">
-      <div className="container mx-auto lg:px-[120px] px-2 pt-11 flex flex-col lg:flex-row justify-between items-start gap-4">
-        <div className="flex flex-col gap-2">
-          <Image src="https://iili.io/HwC1o1S.md.png" width={180} height={100} />
-          <Image src="https://iili.io/HhP6gb2.md.png" width={180} height={100} className="bg-white"/>
-        </div>
-        <>
-          <div className="flex flex-col items-stretch">
-            <h2 className="text-3xl font-bold text-white mb-4">About us</h2>
-            <ul className="flex flex-col gap-4 pl-5">
-              <Link href="/">
-              <li className="text-white list-disc">Home</li>
-              </Link>
-              <Link href="/our-process">
-              <li className="text-white list-disc">Our Process</li>
-              </Link>
-              <Link href={"https://www.coursenator.com/"} target="_blank">
-              <li className="text-white list-disc">Coursenator</li>
-              </Link>
-              <Link href="/portfolio">
-              <li className="text-white list-disc">Portfolio</li>
-              </Link>
-              {/* <li className="text-white list-disc">Ed-tech</li>
-              <li className="text-white list-disc">Blog</li> */}
-            </ul>
-          </div>
-        </>
-        <>
-          <div className="flex flex-col items-stretch">
-            <h2 className="text-3xl font-bold text-white mb-4">
-              What we offer
-            </h2>
-            <ul className="flex flex-col gap-4 pl-5">
-              <li className="text-white list-disc"> Link building strategies</li>
-              <li className="text-white list-disc">Keyword research</li>
-              <li className="text-white list-disc">Content management</li>
-              <li className="text-white list-disc"> Conversion rate optimization</li>
-            </ul>
-          </div>
-        </>
+      <div className="container mx-auto lg:px-[120px] px-2 pt-11 flex flex-col-reverse lg:flex-row justify-between items-start gap-4">
+        <div className="flex flex-col gap-2 items-center w-full lg:w-auto">
+          <div className="w-full bg-[#7f29b1] flex justify-center">
 
+         
+          <Image
+            src="https://iili.io/HwC1o1S.md.png"
+            width={180}
+            height={100}
+            className=""
+          />
+           </div>
+           <div className="w-full bg-white flex justify-center">
+
+           
+          <Image
+            src="https://iili.io/HhP6gb2.md.png"
+            width={180}
+            height={100}
+            className=" " 
+          />
+          </div>
+        </div>
+        <div className="flex justify-between w-full lg:w-auto gap-4 flex-wrap">
+          <>
+            <div className="flex flex-col items-stretch">
+              <h2 className="text-3xl font-bold text-white mb-4">About us</h2>
+              <ul className="flex flex-col gap-4 pl-5">
+                <Link href="/">
+                  <li className="text-white list-disc">Home</li>
+                </Link>
+                <Link href="/our-process">
+                  <li className="text-white list-disc">Our Process</li>
+                </Link>
+                <Link href={"https://www.coursenator.com/"} target="_blank">
+                  <li className="text-white list-disc">Coursenator</li>
+                </Link>
+                <Link href="/portfolio">
+                  <li className="text-white list-disc">Portfolio</li>
+                </Link>
+                {/* <li className="text-white list-disc">Ed-tech</li>
+              <li className="text-white list-disc">Blog</li> */}
+              </ul>
+            </div>
+          </>
+          <>
+            <div className="flex flex-col items-stretch">
+              <h2 className="text-3xl font-bold text-white mb-4">
+                What we offer
+              </h2>
+              <ul className="flex flex-col gap-4 pl-5">
+                <li className="text-white list-disc">
+                  {" "}
+                  Link building strategies
+                </li>
+                <li className="text-white list-disc">Keyword research</li>
+                <li className="text-white list-disc">Content management</li>
+                <li className="text-white list-disc">
+                  {" "}
+                  Conversion rate optimization
+                </li>
+              </ul>
+            </div>
+          </>
+        </div>
         <div className="w-full lg:w-[45%]  md:mt-[-80px] ">
           <div className="relative w-full">
             <div className=" absolute w-full h-full flex flex-wrap justify-center object-fill   overflow-hidden ">
@@ -129,20 +152,22 @@ const Footer = () => {
                 </ul>
 
                 <div className="flex items-center gap-11">
-                  <Link href="https://www.linkedin.com/company/courseo/mycompany/" target={"_blank"}>
-                  
-                  <svg
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
+                  <Link
+                    href="https://www.linkedin.com/company/courseo/mycompany/"
+                    target={"_blank"}
                   >
-                    <path
-                      d="M22.2 0H1.8C0.8 0 0 0.8 0 1.7V22.2C0 23.1 0.8 23.9 1.8 23.9H22.2C23.2 23.9 24 23.1 24 22.2V1.7C24 0.8 23.2 0 22.2 0ZM7.1 20.4H3.6V9H7.1V20.4ZM5.4 7.4C4.3 7.4 3.3 6.5 3.3 5.3C3.3 4.1 4.2 3.2 5.4 3.2C6.5 3.2 7.5 4.1 7.5 5.3C7.5 6.5 6.5 7.4 5.4 7.4ZM20.5 20.3H17V14.7C17 13.4 17 11.6 15.1 11.6C13.2 11.6 13 13.1 13 14.5V20.2H9.5V9H12.8V10.5H12.9C13.4 9.6 14.6 8.6 16.3 8.6C19.9 8.6 20.6 11 20.6 14.1V20.3H20.5Z"
-                      fill="white"
-                    />
-                  </svg>
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M22.2 0H1.8C0.8 0 0 0.8 0 1.7V22.2C0 23.1 0.8 23.9 1.8 23.9H22.2C23.2 23.9 24 23.1 24 22.2V1.7C24 0.8 23.2 0 22.2 0ZM7.1 20.4H3.6V9H7.1V20.4ZM5.4 7.4C4.3 7.4 3.3 6.5 3.3 5.3C3.3 4.1 4.2 3.2 5.4 3.2C6.5 3.2 7.5 4.1 7.5 5.3C7.5 6.5 6.5 7.4 5.4 7.4ZM20.5 20.3H17V14.7C17 13.4 17 11.6 15.1 11.6C13.2 11.6 13 13.1 13 14.5V20.2H9.5V9H12.8V10.5H12.9C13.4 9.6 14.6 8.6 16.3 8.6C19.9 8.6 20.6 11 20.6 14.1V20.3H20.5Z"
+                        fill="white"
+                      />
+                    </svg>
                   </Link>
                   {/* <svg
                     width="24"
@@ -159,7 +184,10 @@ const Footer = () => {
                 </div>
               </div>
               <div className="mt-12">
-                <form onSubmit={e => submitForm(e)} className="flex flex-col gap-5 ">
+                <form
+                  onSubmit={(e) => submitForm(e)}
+                  className="flex flex-col gap-5 "
+                >
                   <div className=" flex flex-col w-full gap-3">
                     <input
                       type="text"

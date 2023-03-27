@@ -49,18 +49,22 @@ const Services = () => {
         <div className="grid justify-center md:grid-cols-3 ">
           {services?.map((service, i) => (
             
-              <div key={i} className="box border  border-[#00000033] px-11 py-8 h-full basis-1/3 flex flex-col items-stretch hover:duration-500 group ">
+              <div key={i} className={`box  border-[#00000033] px-11 py-8 h-full basis-1/3 flex flex-col items-stretch hover:duration-500 group lg:bg-white
+               ${i%2 == 0? "bg-[black]":"bg-white"}`}>
                 <div className="bg-[#E72C4B] max-w-[70px] p-5 rounded-full group-hover:scale-110 duration-500" dangerouslySetInnerHTML={{ __html: service.icon }}>
                   
                  
                   
                 </div>
-                <h2 className="text-3xl font-[impact] text-[#212121] group-hover:text-white duration-500 my-2">
+                <div>
+
+                <h2 className={`text-3xl font-[impact]  md:group-hover:text-white duration-500 my-2 ${i%2 == 0? "text-white":"text-[#212121]"}`}>
                   {service.name}
                 </h2>
-                <p className="text-[#2F2E2F] text-lg group-hover:text-white duration-500 ">
+                <p className={` text-lg md:group-hover:text-white duration-500  ${i%2 == 0? "text-white":"text-[#2F2E2F]"}`}>
                   {service.description}
                 </p>
+                </div>
               </div>
          
           ))}
@@ -68,6 +72,7 @@ const Services = () => {
       </div>
 
       <style jsx>{`
+      @media only screen and (min-width: 900px){
         .box {
           width: 100%;
           height: 100%;
@@ -83,6 +88,7 @@ const Services = () => {
         .box:hover {
           background-position: 00% 0%;
         }
+      }
       `}</style>
     </>
   );
