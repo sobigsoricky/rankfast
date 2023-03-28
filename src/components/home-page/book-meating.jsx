@@ -3,7 +3,7 @@ import { InlineWidget } from "react-calendly";
 const BookMeating = ({ color }) => {
   return (
     <div className={`${color == "white" ? "bg-white" : "bg-[#212121]"}`}>
-      <div className="container mx-auto lg:px-[120px] px-2 py-20 flex justify-center items-center gap-20 flex-wrap">
+      <div className="container mx-auto lg:px-[120px] px-2 py-20 flex md:justify-center items-center gap-20 flex-wrap">
         <div>
           <p
             className={`${
@@ -13,7 +13,7 @@ const BookMeating = ({ color }) => {
             REPORT WILL BE SENT IN AN HOUR!
           </p>
           <hr className="my-2" />
-          <h2 className={` text-4xl md:text-7xl  text-[#E72C4B] uppercase  font-[impact]`}>
+          <h2 className={` text-5xl md:text-7xl  text-[#E72C4B] uppercase  font-[impact]`}>
             Book meeting
           </h2>
         </div>

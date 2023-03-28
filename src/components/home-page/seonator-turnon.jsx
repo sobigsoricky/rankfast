@@ -119,13 +119,13 @@ const SeonatorTurnon = () => {
   
 
   return (
-    <div className="bg-white container mx-auto lg:px-[120px] px-2 py-10">
-      <h2 className="font-[impact] text-5xl md:text-7xl">
+    <div className="bg-white container mx-auto lg:px-[120px]  py-10">
+      <h2 className="font-[impact] text-5xl md:text-7xl px-2">
         See how we make <span className="text-[#E72C4B]">the difference</span>
       </h2>
-      <div className="md:p-10  ">
-        <div className="w-full flex flex-col items-end">
-          <p>Turn on Rankfast</p>
+      <div className="md:p-4 p-2  border border-[#00000033] mt-6">
+        <div className="w-full flex items-center justify-between md:flex-col md:items-end border-b border-[#ECECEC] mb-4 pb-6">
+          <p className="font-semibold md:font-normal">Turn on Rankfast</p>
           <div className="relative inline-block w-20  align-middle select-none transition duration-200 ease-in right-0">
             <input
               type="checkbox"

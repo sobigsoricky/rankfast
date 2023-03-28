@@ -26,8 +26,8 @@ const Footer = () => {
   };
   return (
     <div className="bg-[#111111] mt-40">
-      <div className="container mx-auto lg:px-[120px] px-2 pt-11 flex flex-col-reverse lg:flex-row justify-between items-start gap-4">
-        <div className="flex flex-col gap-2 items-center w-full lg:w-auto">
+      <div className="container mx-auto lg:px-[120px]  md:pt-11 flex flex-col-reverse lg:flex-row justify-between items-start gap-4">
+        <div className="flex flex-col gap-2 items-center w-full lg:w-auto px-2 md:px-0 ">
           <div className="w-full bg-[#7f29b1] flex justify-center">
 
          
@@ -49,7 +49,7 @@ const Footer = () => {
           />
           </div>
         </div>
-        <div className="flex justify-between w-full lg:w-auto gap-4 flex-wrap ">
+        <div className="flex justify-between w-full lg:w-auto gap-4 flex-wrap mt-8 mb-12 md:mt-0 px-2 md:px-0 ">
           <>
             <div className="flex flex-col items-stretch">
               <h2 className="text-3xl  text-white mb-4 font-[impact]">About us</h2>
@@ -208,9 +208,9 @@ const Footer = () => {
                       width="28"
                       height="44"
                       viewBox="0 0 28 44"
-                      fill="none"
+                      fill="black"
                       xmlns="http://www.w3.org/2000/svg"
-                      className=" right-0 group-hover:right-[-200%] relative duration-500 w-full"
+                      className="text-black right-0 group-hover:right-[-200%] relative duration-500 w-full"
                     >
                       <path
                         d="M5.68332 43.5L0.666656 38.4833L17.15 22L0.666656 5.51667L5.68332 0.5L27.1833 22L5.68332 43.5Z"
