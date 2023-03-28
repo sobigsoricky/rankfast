@@ -89,7 +89,7 @@ const Hero = () => {
           <h3 className="font-semibold text-white md:absolute">Results</h3>
 <div className="md:ml-32">
 
-
+ 
           <Slider  {...settings} >
             <div className="text-white  font-light ">
               45+ SATISFIED CLIENTS

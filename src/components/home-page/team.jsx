@@ -62,23 +62,23 @@ const Team = () => {
         <br /> <span className="text-[#E72C4B]"> Experts</span>
       </h2>
 
-      <div className="w-full flex flex-wrap gap-10 justify-center md:justify-between">
+      <div className="w-full grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10 justify-center md:justify-between">
         {members?.map((member, i) => (
           <div key={i} className="relative  mt-10">
-            <div className="relative w-full h-full max-w-[280px] max-h-[280px]">
+            <div className="relative w-full  max-w-[280px] max-h-[280px]">
               <Image
                 src={member.img}
                 alt=""
                 height={280}
                 width={280}
-                className="rounded-full   h-full object-cover  block"
+                className="rounded-full   w-full object-cover object-top  block"
               />
             </div>
             <div className="text-center mt-4">
-              <h2 className="text-xl font-extralight  font-[impact] text-[#212121] ">
+              <h2 className="text-sm md:text-xl font-extralight  font-[impact] text-[#212121] ">
                 {member.name}
               </h2>
-              <p className="text-lg font-normal text-[#e72c4b] ">
+              <p className="text-xs md:text-lg font-normal text-[#e72c4b] ">
                 {member.designation}
               </p>
               {member.linkedIn ? (

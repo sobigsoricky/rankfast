@@ -13,10 +13,10 @@ const RevenueGenrated = () => {
             $2,345,000{" "}
             
           </h3>
-          <span className="text-2xl font-semibold text-[#262626] block">
+          <span className="text-2xl font-semibold text-white md:text-[#262626] block">
               Revenue Generated
             </span>
-          <p className="text-[#262626] text-lg">And counting..</p>
+          <p className=" text-white md:text-[#262626] text-lg">And counting..</p>
         </div>
       </div>
 

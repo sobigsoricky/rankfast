@@ -49,10 +49,10 @@ const Footer = () => {
           />
           </div>
         </div>
-        <div className="flex justify-between w-full lg:w-auto gap-4 flex-wrap">
+        <div className="flex justify-between w-full lg:w-auto gap-4 flex-wrap ">
           <>
             <div className="flex flex-col items-stretch">
-              <h2 className="text-3xl font-bold text-white mb-4">About us</h2>
+              <h2 className="text-3xl  text-white mb-4 font-[impact]">About us</h2>
               <ul className="flex flex-col gap-4 pl-5">
                 <Link href="/">
                   <li className="text-white list-disc">Home</li>
@@ -73,7 +73,7 @@ const Footer = () => {
           </>
           <>
             <div className="flex flex-col items-stretch">
-              <h2 className="text-3xl font-bold text-white mb-4">
+              <h2 className="text-3xl  text-white mb-4 font-[impact]">
                 What we offer
               </h2>
               <ul className="flex flex-col gap-4 pl-5">
@@ -101,7 +101,7 @@ const Footer = () => {
               />
             </div>
             <div className="relative z-40 py-20 px-8">
-              <h2 className="text-3xl font-bold text-white">Contact us</h2>
+              <h2 className="text-3xl font-[impact] text-white">Contact us</h2>
               <div className="mt-6 flex items-start gap-8">
                 <ul className="flex flex-col gap-6">
                   <li className="flex text-white items-center gap-2">
@@ -191,12 +191,12 @@ const Footer = () => {
                   <div className=" flex flex-col w-full gap-3">
                     <input
                       type="text"
-                      className="text-[#ffffff] bg-transparent border border-[#ffffff] py-2 px-8 w-full "
+                      className="text-[#ffffff] placeholder:text-white  bg-transparent border border-[#ffffff] py-4 px-8 w-full "
                       placeholder="Enter you email"
                     />
                     <input
                       type="text"
-                      className="text-[#ffffff] bg-transparent border border-[#ffffff] py-2 px-8 w-full"
+                      className="text-[#ffffff] placeholder:text-white bg-transparent border border-[#ffffff] py-4 px-8 w-full"
                       placeholder="Enter your website URL"
                     />
                   </div>

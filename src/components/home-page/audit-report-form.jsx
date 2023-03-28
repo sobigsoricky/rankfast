@@ -25,7 +25,7 @@ const AuditReportForm = () => {
   };
   return (
     <>
-      <div className=" container mx-auto lg:px-[120px] px-2">
+      <div className=" container mx-auto lg:px-[120px] ">
         <div className="bg-[#212121] p-4 lg:py-14 lg:px-11 flex md:flex-row flex-col gap-4">
           <div className="text-white md:w-2/5">
             <h3 className="text-4xl font-[impact]">
