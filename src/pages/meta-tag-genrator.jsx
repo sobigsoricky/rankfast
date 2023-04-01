@@ -6,13 +6,13 @@ const MetaTagGenrator = () => {
   const [url, setURL] = useState("")
   const [metatag, setMetatag] = useState("")
   const [isLoading, setIsLoading] = useState(false);
-  console.log(metatag);
+
   const getMetaTag = async(e) =>{
     e.preventDefault()
     setIsLoading(true);
     const res = await fetch(`/api/meta-genrator-api?url=${url}`)
     const data = await res.json()
-    await console.log(data.choices[0].text);
+  
     // const data = await res
     setMetatag(JSON.parse(data?.choices[0]?.text))
      setIsLoading(false);
@@ -66,8 +66,8 @@ const MetaTagGenrator = () => {
         
           <div className="bg-white p-4 rounded-lg">
             {isLoading?"Loading....": (<>
-            <p> <b>Title</b> - {metatag?.meta_title}</p>
-            <p> <b>Description</b> - {metatag?.meta_description}</p>
+            <p> <b>Title</b> - {metatag?.meta_title || metatag?.title}</p>
+            <p> <b>Description</b> - {metatag?.meta_description || metatag?.description}</p>
 
             </>) }
             
