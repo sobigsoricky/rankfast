@@ -6,13 +6,7 @@ const testimonials = [
   {
     designation:"Founder of Think and Learn Smarter",
     person: "Connell Kennelly",
-    text: `I run an E-learning business that provide an online education service to high school students, and before trying myself to understand how SEO works, I was having a hard time getting my website to show up on Google. My search engine visibility was poor and I wasn't getting much website traffic.
- 
-    But after working with Coursenator, they implemented a variety of strategies to help improve my search engine rankings. They conducted keyword research to identify the terms that were most relevant to my business, and then optimized my website's meta tags and content to include those keywords. They also built backlinks to my website from other high-authority sites. They have also made it very clear for me what exactly I need to do in order for my articles to gain more widespread attention from my target audience. This is of immense importance and one of the true godsends of working with this company,
-     
-    Since working with Coursenator, my search engine visibility has greatly improved. My website now ranks on the first page of Google for several key terms, and I've seen a significant increase in website traffic as a result. I've also seen more leads and sales coming through my website.
-     
-    I'm extremely happy with the services provided by Coursenator, and I would recommend them to anyone looking to improve their search engine visibility`
+    text: `Coursenator helped my E-learning business improve search engine rankings by conducting keyword research, optimizing meta tags and content, and building backlinks from high-authority sites. Their services have greatly improved my search engine visibility and increased website traffic, leads, and sales. I highly recommend them for anyone looking to improve their search engine visibility`
   },
   // {
   //   person: "John Doe",

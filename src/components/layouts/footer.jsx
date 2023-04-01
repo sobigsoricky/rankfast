@@ -183,12 +183,12 @@ const Footer = () => {
                   </svg> */}
                 </div>
               </div>
-              <div className="mt-12">
+              <div className="mt-10">
                 <form
                   onSubmit={(e) => submitForm(e)}
-                  className="flex flex-col gap-5 "
+                  className="flex flex-col gap-8 "
                 >
-                  <div className=" flex flex-col w-full gap-3">
+                  <div className=" flex flex-col w-full gap-4">
                     <input
                       type="text"
                       className="text-[#ffffff] placeholder:text-white  bg-transparent border border-[#ffffff] py-4 px-8 w-full "

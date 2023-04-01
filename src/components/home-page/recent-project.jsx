@@ -49,7 +49,9 @@ const RecentProject = () => {
             src="https://iili.io/HNzMUqQ.png"
             className="h-64 w-full object-scale-down sm:h-80 lg:h-96 group-hover:scale-110  duration-500"
           />
-          <div className="bg-black p-6 relative z-10">
+          <div className="bg-black pb-10 md:pb-0">
+          
+          <div className=" p-6 relative z-10">
             <h3 className=" text-lg font-bold text-white sm:text-lg">
               Builder.ai
             </h3>
@@ -62,6 +64,7 @@ const RecentProject = () => {
           >
             View project
           </Link>
+          </div>
         </div>
         </>
         <>
@@ -72,6 +75,7 @@ const RecentProject = () => {
             src="https://iili.io/Hh6mZWx.md.png"
             className="h-64 w-full object-scale-down sm:h-80 lg:h-96 group-hover:scale-110  duration-500"
           />
+           <div className="bg-black pb-10 md:pb-0">
           <div className="bg-black p-6 relative z-10">
             <h3 className=" text-lg font-bold text-white sm:text-lg">Byjus</h3>
             <p className="mt-4 max-w-sm text-white text-4xl">13% growth</p>
@@ -83,6 +87,7 @@ const RecentProject = () => {
           >
             View project
           </Link>
+          </div>
         </div>
         </>
         <>
@@ -93,6 +98,8 @@ const RecentProject = () => {
             src="https://iili.io/HwBU8Av.webp"
             className="h-64 w-full object-scale-down sm:h-80 lg:h-96 group-hover:scale-110  duration-500"
           />
+           <div className="bg-black pb-10 md:pb-0">
+
           <div className="bg-black p-6 relative z-10">
             <h3 className=" text-lg font-bold text-white sm:text-lg">
               {" "}
@@ -107,6 +114,7 @@ const RecentProject = () => {
           >
             View project
           </Link>
+          </div>
         </div>
         </>
         {/* <div className="block max-w-[540px] group overflow-clip mr-4 ">

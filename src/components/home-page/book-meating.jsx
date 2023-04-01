@@ -2,7 +2,7 @@ import React from "react";
 import { InlineWidget } from "react-calendly";
 const BookMeating = ({ color }) => {
   return (
-    <div className={`${color == "white" ? "bg-white" : "bg-[#212121]"}`}>
+    <div id="book-meating" className={`${color == "white" ? "bg-white" : "bg-[#212121]"}`}>
       <div className="container mx-auto lg:px-[120px] px-2 py-20 flex md:justify-center items-center gap-20 flex-wrap">
         <div>
           <p

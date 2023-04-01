@@ -38,7 +38,7 @@ const MetaTagGenrator = () => {
             htmlFor="sitemap-url"
             className="block w-full text-white font-semibold text-lg"
           >
-            sitemap-url
+            webpage url
           </label>
           <div className="flex  w-full flex-col md:flex-row gap-4 mt-2">
             <input

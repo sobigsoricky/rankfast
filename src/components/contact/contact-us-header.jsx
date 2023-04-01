@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 const ContactUsHeader = () => {
@@ -30,19 +31,19 @@ const ContactUsHeader = () => {
         <div className="absolute w-full h-full flex flex-wrap justify-center object-contain   overflow-hidden">
           <Image src="https://iili.io/HXjtmGf.md.webp" fill />
         </div>
-        <div className="relative z-50 lg:px-[120px] px-2 mx-auto container py-[200px] flex justify-between md:flex-row flex-col gap-4">
-          <div>
-            <h1 className="text-2xl font-semibold text-[#fff] block">
+        <div className="relative z-50 lg:px-[120px]  mx-auto container py-[200px] flex justify-between md:flex-row flex-col gap-4">
+          <div className="px-2">
+            <h1 className="text-2xl font-semibold text-[#fff] block ">
               {" "}
               Contact us
             </h1>
-            <h3 className="text-8xl font-bold text-white uppercase">
+            <h3 className="text-4xl font-[impact] lg:text-8xl  text-white uppercase">
               Seo is king
             </h3>
 
-            <button className="w-full md:w-auto inline-block py-4 md:px-28 text-center bg-[#212121] mt-8 font-medium text-white">
+            <Link href="#book-meating" className="w-full md:w-auto inline-block py-4 md:px-28 text-center bg-[#212121] mt-8 font-medium text-white">
               Book a meeting
-            </button>
+            </Link>
 
             <p className="mt-8 text-[#00000099] font-semibold">
               Write to us at{" "}
@@ -51,11 +52,11 @@ const ContactUsHeader = () => {
               </span>
             </p>
           </div>
-          <div className="bg-white p-11">
+          <div className="bg-white p-11 ">
             <form onSubmit={(e) => submitForm(e)} className="space-y-4">
               <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
                 <div>
-                  <label className="font-semibold mb-2" htmlFor="email">
+                  <label className="font-semibold mb-2 inline-block" htmlFor="email">
                     Name
                   </label>
                   <input
@@ -66,7 +67,7 @@ const ContactUsHeader = () => {
                   />
                 </div>
                 <div>
-                  <label className="font-semibold mb-2" htmlFor="phone">
+                  <label className="font-semibold mb-2 inline-block" htmlFor="phone">
                     E-mail
                   </label>
                   <input
@@ -78,7 +79,7 @@ const ContactUsHeader = () => {
                 </div>
               </div>
               <div>
-                <label className="font-semibold mb-2" htmlFor="name">
+                <label className="font-semibold mb-2 inline-block " htmlFor="name">
                   Enter your website link
                 </label>
                 <input
