@@ -14,7 +14,7 @@ export default async function handler(req, res) {
     
 
     const meta = await openai.createCompletion({
-      model: "text-davinci-003",
+      model: "gpt-3.5-turbo",
       prompt: `create meta title and description for this page ${url} as json`,
       max_tokens: 1000,
       temperature: 0,
