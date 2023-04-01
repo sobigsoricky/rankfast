@@ -69,7 +69,7 @@ pt-[140px]  pb-60"
         <div className="flex flex-col lg:flex-row justify-between container mx-auto lg:px-[120px] px-2 ">
           <div className="pt-[80px] ">
             <h1 className="font-[impact] text-4xl md:text-8xl text-white font-light  uppercase">
-              XML Sitemap URL Extractor
+              Webpge image extractor
             </h1>
           </div>
         </div>
@@ -113,7 +113,7 @@ pt-[140px]  pb-60"
             <div>Loading...</div>
           ) : (
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 justify-between items-center gap-4">
-              {imageUrls.map((url, index) => (
+              {imageUrls?.map((url, index) => (
                 <div key={index} className="flex justify-center w-full items-center border h-full relative">
                 <img className="object-center" width={200}  src={url} alt={`Image ${index}`} />
                 <button onClick={() => handleClickDownload(url)} className="absolute top-0 right-0 bg-black text-white p-2 text-xs" download>Download</button>
