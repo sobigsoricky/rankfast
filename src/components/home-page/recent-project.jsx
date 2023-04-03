@@ -8,7 +8,7 @@ const settings = {
   className: "center",
   centerMode: true,
   infinite: true,
-  centerPadding: "60px",
+  centerPadding: "20px",
   slidesToShow: 3,
   slidesToScroll: 1,
   speed: 500,
@@ -40,7 +40,7 @@ const RecentProject = () => {
 
       <Slider centerPadding="" {...settings} className="w-full">
         <>
-          <div className=" block  group overflow-clip mr-4  border border-[#999]">
+          <div className=" block  group overflow-clip mx-2  border border-[#999]">
             <img
               alt="Art"
               src="https://iili.io/HNzMUqQ.png"
@@ -64,7 +64,7 @@ const RecentProject = () => {
           </div>
         </>
         <>
-          <div className="block  group overflow-clip mr-4   border border-[#999]">
+          <div className="block  group overflow-clip mx-2   border border-[#999]">
             <img
               alt="Art"
               src="https://iili.io/Hh6mZWx.md.png"
@@ -88,7 +88,7 @@ const RecentProject = () => {
           </div>
         </>
         <>
-          <div className="block  group overflow-clip mr-4  border border-[#999]">
+          <div className="block  group overflow-clip mx-2  border border-[#999]">
             <img
               alt="Art"
               src="https://iili.io/HwBU8Av.webp"
@@ -112,7 +112,7 @@ const RecentProject = () => {
             </div>
           </div>
         </>
-        {/* <div className="block max-w-[540px] group overflow-clip mr-4 ">
+        {/* <div className="block max-w-[540px] group overflow-clip mx-2 ">
           <img
             alt="Art"
             src="https://images.unsplash.com/photo-1605721911519-3dfeb3be25e7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"

@@ -39,12 +39,12 @@ const Navbar = () => {
         className={
           scrollDirection == "Up" && window?.scrollY > 100
             ? "bg-[#e72c4b] fixed w-full top-0 z-[999] py-2 duration-1000"
-            : `bg-transparent absolute w-full top-10  z-[999] duration-1000 `
+            : `bg-transparent ${showMenu?"fixed":"absolute"}  w-full top-10  z-[999] duration-1000 `
         }
       >
         <div className="mx-auto container   sm:px-6 lg:px-[120px] px-2">
           <div className="flex  items-center justify-between">
-            <div className="flex-1 md:flex md:items-center md:gap-12">
+            <div className="flex-1 lg:flex lg:items-center lg:gap-12">
               <Link
                 className=" text-white font-[impact] flex flex-col justify-center "
                 href="/"
@@ -61,12 +61,12 @@ const Navbar = () => {
               </Link>
             </div>
 
-            <div className="md:flex md:items-center md:gap-12">
+            <div className="lg:flex lg:items-center lg:gap-12">
               <nav
                 aria-label="Site Nav"
                 className={`${showMenu ? "block" : "hidden"} lg:block`}
               >
-                <ul className="flex items- fixed right-0 top-0  w-full h-full p-6 md:p-0  bg-[#E72C4B] md:bg-transparent md:static  flex-col justify-center lg:justify-between lg:flex-row items-center gap-6 text-sm">
+                <ul className="flex items- fixed right-0 top-0  w-full h-full p-6 lg:p-0  bg-[#E72C4B] lg:bg-transparent lg:static  flex-col justify-center lg:justify-between lg:flex-row items-center gap-6 text-sm">
                   <li>
                     <Link
                       href="/our-process"

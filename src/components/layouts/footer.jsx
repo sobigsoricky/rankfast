@@ -25,7 +25,7 @@ const Footer = () => {
       .catch((error) => console.log(error));
   };
   return (
-    <div className="bg-[#111111] mt-40">
+    <div className="bg-[#111111] mt-20">
       <div className="container mx-auto lg:px-[120px]  md:pt-11 flex flex-col-reverse lg:flex-row justify-between items-start gap-4">
         <div className="flex flex-col gap-2 items-center w-full lg:w-auto px-2 md:px-0 ">
           <div className="w-full bg-[#7f29b1] flex justify-center">

@@ -31,7 +31,7 @@ const ContactUsHeader = () => {
         <div className="absolute w-full h-full flex flex-wrap justify-center object-contain   overflow-hidden">
           <Image src="https://iili.io/HXjtmGf.md.webp" fill />
         </div>
-        <div className="relative z-50 lg:px-[120px]  mx-auto container py-[200px] flex justify-between md:flex-row flex-col gap-4">
+        <div className="relative z-50 lg:px-[120px]  mx-auto container pt-[200px] md:py-[200px] flex justify-between md:flex-row flex-col gap-4">
           <div className="px-2">
             <h1 className="text-2xl font-semibold text-[#fff] block ">
               {" "}
