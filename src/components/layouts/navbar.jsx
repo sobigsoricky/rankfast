@@ -66,7 +66,7 @@ const Navbar = () => {
                 aria-label="Site Nav"
                 className={`${showMenu ? "block" : "hidden"} lg:block`}
               >
-                <ul className="flex fixed right-0 top-[140px] w-full h-full p-6 md:p-0  bg-[#E72C4B] md:bg-transparent md:static  flex-col lg:flex-row items-center gap-6 text-sm">
+                <ul className="flex items- fixed right-0 top-0  w-full h-full p-6 md:p-0  bg-[#E72C4B] md:bg-transparent md:static  flex-col justify-center lg:justify-between lg:flex-row items-center gap-6 text-sm">
                   <li>
                     <Link
                       href="/our-process"
@@ -126,7 +126,7 @@ const Navbar = () => {
                 <div className="block lg:hidden ">
                   <button
                     onClick={(e) => setShowMenu(!showMenu)}
-                    className="rounded  p-2 text-white transition hover:text-gray-600/75"
+                    className="rounded relative z-[999] p-2 text-white transition hover:text-gray-600/75"
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
