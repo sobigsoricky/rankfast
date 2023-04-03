@@ -2,6 +2,7 @@ import Image from "next/image";
 import React from "react";
 import Glider from "react-glider";
 import "glider-js/glider.min.css";
+import Slider from "react-slick";
 const testimonials = [
   {
     designation:"Founder of Think and Learn Smarter",
@@ -31,23 +32,18 @@ const Testimonials = () => {
     <div className="lg:px-[120px] px-2 container mx-auto py-10">
       <h2 className="text-4xl md:text-6xl font-[impact] text-black mb-8">TESTIMONIALS</h2>
 
-      <Glider
-        responsive={[
-          {
-            breakpoint: 864,
-            settings: {
-              slidesToShow: 1,
-            },
-          },
-        ]}
-        draggable
-        slidesToShow={1}
-        slidesToScroll={1}
-        rewind
-        className="gap-4 w-full"
+      <div
+      
+        // className = "center"
+        // centerMode = {true}
+        // // infinite = {true}
+     
+        // slidesToShow={1}
+      className="flex justify-center"
+        
       >
         {testimonials?.map((testimonial, i) =>(
-          <div key={i} className=" border border-[#00000033] group overflow-clip w-[400px] ml-4">
+          <div key={i} className=" border border-[#00000033] group overflow-clip w-full">
           {/* <div className="relative overflow-clip w-full h-[200px] object-cover">
             <Image
               src="https://iili.io/HXjtmGf.md.webp"
@@ -213,7 +209,7 @@ const Testimonials = () => {
             </p>
           </div>
         </div> */}
-      </Glider>
+      </div>
     </div>
   );
 };

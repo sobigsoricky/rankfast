@@ -50,7 +50,7 @@ const Hero = () => {
       >
         <div className="flex flex-col lg:flex-row justify-between container mx-auto lg:px-[120px] px-2 ">
           <div className="pt-[80px] ">
-            <h1 className="text-2xl text-white font-semibold">
+            <h1 className="text-lg md:text-2xl text-white font-semibold">
               Welcome to Rankfast - Your SEO Partner
             </h1>
             <h2 className="text-4xl md:text-7xl text-white  uppercase  font-[Impact]">
