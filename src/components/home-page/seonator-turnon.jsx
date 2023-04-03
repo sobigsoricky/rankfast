@@ -123,25 +123,25 @@ const SeonatorTurnon = () => {
       <h2 className="font-[impact] text-5xl md:text-7xl px-2">
         See how we make <span className="text-[#E72C4B]">the difference</span>
       </h2>
-      <div className="md:p-4 p-2  border border-[#00000033] mt-6">
-        <div className="w-full flex items-center justify-between md:flex-col md:items-end border-b border-[#ECECEC] mb-4 pb-6">
+      <div className="md:p-4 p-2  border border-[#00000033] mt-6 w-full md:w-auto">
+        <div className="w-full flex items-start justify-start flex-col md:items-end border-b border-[#ECECEC] mb-4 pb-6 gap-2">
           <p className="font-semibold md:font-normal">Turn on Rankfast</p>
-          <div className="relative inline-block w-20  align-middle select-none transition duration-200 ease-in right-0">
+          <div className="relative inline-block w-28  align-middle select-none transition duration-200 ease-in right-0">
             <input
               type="checkbox"
               name="toggle"
               id="toggle"
-              className={`toggle-checkbox absolute block w-10 h-10 rounded-full  border-4 appearance-none cursor-pointer  ${
+              className={`toggle-checkbox absolute block w-14 h-14 rounded-full  border-4 appearance-none cursor-pointer  ${
                 isChecked
                   ? "bg-green-400  right-0  duration-500"
-                  : "bg-red-400 right-[calc(100%_-_40px)]  duration-500"
+                  : "bg-red-400 right-[calc(100%_-_56px)]  duration-500"
               }`}
               checked={isChecked}
               onChange={() => seonatorOn()}
             />
             <label
               htmlFor="toggle"
-              className="toggle-label block overflow-hidden h-10 rounded-full bg-gray-300 cursor-pointer"
+              className="toggle-label block overflow-hidden h-14 rounded-full bg-gray-300 cursor-pointer"
             />
           </div>
         </div>

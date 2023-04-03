@@ -53,7 +53,7 @@ const Hero = () => {
             <h1 className="text-2xl text-white font-semibold">
               Welcome to Rankfast - Your SEO Partner
             </h1>
-            <h2 className="text-6xl md:text-7xl text-white  uppercase  font-[Impact]">
+            <h2 className="text-4xl md:text-7xl text-white  uppercase  font-[Impact]">
               Innovate Transform and{" "}
               <span className="text-[#E72C4B]">Rankfast Forward</span>
             </h2>

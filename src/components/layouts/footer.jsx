@@ -100,7 +100,7 @@ const Footer = () => {
                 className="object-fill"
               />
             </div>
-            <div className="relative z-40 py-20 px-8">
+            <div className="relative z-40 py-20 md:px-8 px-2">
               <h2 className="text-3xl font-[impact] text-white">Contact us</h2>
               <div className="mt-6 flex items-start gap-8">
                 <ul className="flex flex-col gap-6">

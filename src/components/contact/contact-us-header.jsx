@@ -47,13 +47,13 @@ const ContactUsHeader = () => {
 
             <p className="mt-8 text-[#00000099] font-semibold">
               Write to us at{" "}
-              <span className="block font-bold text-black text-lg">
+              <span className="block font-bold text-white md:text-black text-lg">
                 contactcoursenator@gmail.com
               </span>
             </p>
           </div>
-          <div className="bg-white p-11 ">
-            <form onSubmit={(e) => submitForm(e)} className="space-y-4">
+          <div className="bg-white py-11 px-2 md:p-11 ">
+            <form onSubmit={(e) => submitForm(e)} className="space-y-4 ">
               <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
                 <div>
                   <label className="font-semibold mb-2 inline-block" htmlFor="email">

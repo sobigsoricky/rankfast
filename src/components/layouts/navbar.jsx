@@ -1,26 +1,73 @@
 import Image from "next/image";
 import Link from "next/link";
-import React, { useState } from "react";
+import React, { useCallback, useEffect, useState } from "react";
 
 const Navbar = () => {
-  const [showMenu, setShowMenu] = useState(false)
+  const [showMenu, setShowMenu] = useState(false);
+
+  const [scrollDirection, setScrollDirection] = useState("no scroll");
+  if (typeof window !== "undefined") {
+    const [y, setY] = useState(document?.scrollingElement.scrollHeight);
+
+    const handleNavigation = useCallback(
+      (e) => {
+        if (y > window.scrollY) {
+          setScrollDirection("Up");
+         
+        } else if (y < window.scrollY) {
+          setScrollDirection("down");
+         
+        }
+        setY(window.scrollY);
+      },
+      [y]
+    );
+
+    useEffect(() => {
+      window?.addEventListener("scroll", handleNavigation);
+
+      return () => {
+        window?.removeEventListener("scroll", handleNavigation);
+      };
+    }, [handleNavigation]);
+  }
+
   return (
     <>
-      <header aria-label="Site Header" className="bg-transparent absolute w-full top-10 z-[999]">
+      <header
+        aria-label="Site Header"
+        className={
+          scrollDirection == "Up" && window?.scrollY > 100
+            ? "bg-[#e72c4b] fixed w-full top-0 z-[999] py-2 duration-1000"
+            : `bg-transparent absolute w-full top-10  z-[999] duration-1000 `
+        }
+      >
         <div className="mx-auto container   sm:px-6 lg:px-[120px] px-2">
           <div className="flex  items-center justify-between">
             <div className="flex-1 md:flex md:items-center md:gap-12">
-              <Link className=" text-white font-[impact] flex flex-col justify-center " href="/">
-               {/* Rankfast */}
-                <Image src="https://iili.io/HwC1qX4.md.png" alt="" width={150} height={60} className="z-10"/>
+              <Link
+                className=" text-white font-[impact] flex flex-col justify-center "
+                href="/"
+              >
+                {/* Rankfast */}
+                <Image
+                  src="https://iili.io/HwC1qX4.md.png"
+                  alt=""
+                  width={150}
+                  height={60}
+                  className="z-10"
+                />
                 {/* <h2 className="-mt-3 text-2xl font-light">Rankfast</h2> */}
               </Link>
             </div>
 
             <div className="md:flex md:items-center md:gap-12">
-              <nav aria-label="Site Nav" className={`${showMenu?"block":"hidden"} lg:block`}>
+              <nav
+                aria-label="Site Nav"
+                className={`${showMenu ? "block" : "hidden"} lg:block`}
+              >
                 <ul className="flex fixed right-0 top-[140px] w-full h-full p-6 md:p-0  bg-[#E72C4B] md:bg-transparent md:static  flex-col lg:flex-row items-center gap-6 text-sm">
-                <li>
+                  <li>
                     <Link
                       href="/our-process"
                       className="text-white transition hover:text-white/75"
@@ -33,7 +80,6 @@ const Navbar = () => {
                       className="text-white transition hover:text-white/75"
                       href="https://www.coursenator.com/"
                       target={"_blank"}
-
                     >
                       Coursenator
                     </Link>
@@ -66,22 +112,22 @@ const Navbar = () => {
                     </a>
                   </li> */}
                   <li className="sm:flex sm:gap-4">
-                  <Link
-                    className=" bg-[#E72C4B] px-11 py-4 text-sm font-medium text-white"
-                    href="/contact-us"
-                  >
-                    Contact us
-                  </Link>
-                </li>
-                 
+                    <Link
+                      className=" bg-[#E72C4B] px-11 py-4 text-sm font-medium text-white"
+                      href="/contact-us"
+                    >
+                      Contact us
+                    </Link>
+                  </li>
                 </ul>
               </nav>
 
               <div className="flex items-center gap-4">
-                
-
                 <div className="block lg:hidden ">
-                  <button onClick={e => setShowMenu(!showMenu)} className="rounded  p-2 text-white transition hover:text-gray-600/75">
+                  <button
+                    onClick={(e) => setShowMenu(!showMenu)}
+                    className="rounded  p-2 text-white transition hover:text-gray-600/75"
+                  >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       className="h-7 w-7"
