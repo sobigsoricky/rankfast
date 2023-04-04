@@ -8,7 +8,7 @@ const SingleBlog = ({ post }) => {
   console.log(post);
   return (
     <OuterLayout>
-      <SingleblogHeader img={post?.featuredImage?.node?.sourceUrl} />
+      <SingleblogHeader img={post?.featuredImage?.node?.sourceUrl ||"https://iili.io/HO5KTjj.md.png"} />
       <div className="container mx-auto flex flex-col-reverse md:flex-row items-start  md:px-[120px] px-2">
         <AutherSidebar
           decription={post?.author?.node?.description}
@@ -18,7 +18,7 @@ const SingleBlog = ({ post }) => {
         <SingleblogContent
           content={post?.content}
           title={post?.title}
-          img={post?.featuredImage?.node?.sourceUrl}
+     
           auther={post?.author?.node?.name}
           date={post?.date}
         />

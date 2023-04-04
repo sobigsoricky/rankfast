@@ -2,21 +2,22 @@ import Link from "next/link";
 import React from "react";
 
 const BlogCard = ({ data }) => {
-  // console.log(data);
+  console.log(data);
   return (
     <>
-      <div className="max-w-3xl w-full border border-[#00000033] flex flex-col justify-between">
+      <div className="max-w-3xl w-full border border-[#00000033] flex flex-col justify-between h-full">
         <div>
           <div>
             <img
-              src="https://iili.io/HOApbz7.md.png"
+              src={data?.featuredImage?.node?.sourceUrl || "https://iili.io/HOApbz7.md.png" }
+             
               alt=""
               className="w-full h-[250px] object-cover"
             />
           </div>
           <div className="px-5 md:px-14">
             <img
-              src="https://iili.io/HORFiAb.png"
+              src={data?.author?.node?.avatar?.url}
               alt=""
               className="w-36 h-36 -mt-16"
             />
@@ -35,7 +36,7 @@ const BlogCard = ({ data }) => {
                     fill="black"
                   />
                 </svg>
-                <p>User name</p>
+                <p>{data?.author?.node?.name}</p>
               </span>
 
               <span className="flex gap-4 items-center font-semibold text-lg">
@@ -52,7 +53,7 @@ const BlogCard = ({ data }) => {
                   />
                 </svg>
 
-                <p>02 January 2023</p>
+                <p>{data?.date?.slice(0, -9)}</p>
               </span>
             </div>
 

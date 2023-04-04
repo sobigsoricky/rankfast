@@ -29,11 +29,25 @@ export async function getServerSideProps({ context }) {
       query: `
       {
         posts {
+          
           nodes {
             title
             slug
             date
+            author {
+              node {
+                name
+                avatar {
+                  url
+                }
+              }
+            }
             excerpt
+            featuredImage {
+              node {
+                sourceUrl
+              }
+            }
           }
         }
       }
