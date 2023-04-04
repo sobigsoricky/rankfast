@@ -26,6 +26,7 @@
     "react-csv": "^2.2.2",
     "react-dom": "18.2.0",
     "react-glider": "^4.0.2",
+    "react-share": "^4.4.1",
     "react-slick": "^0.29.0"
   },
   "devDependencies": {

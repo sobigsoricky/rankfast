@@ -61,7 +61,7 @@ const Navbar = () => {
               </Link>
             </div>
 
-            <div className="lg:flex lg:items-center lg:gap-12">
+            <div className="">
               <nav
                 aria-label="Site Nav"
                 className={`${showMenu ? "block" : "hidden"} lg:block`}
@@ -113,7 +113,7 @@ const Navbar = () => {
                   </li> */}
                   <li className="sm:flex sm:gap-4">
                     <Link
-                      className=" bg-[#E72C4B] px-11 py-4 text-sm font-medium text-white"
+                      className=" text-[#E72C4B] px-11 py-4 text-sm font-medium bg-white"
                       href="/contact-us"
                     >
                       Contact us

@@ -46,12 +46,12 @@ const members = [
     designation: "Conversion Rate Optimizer",
     linkedIn: "",
   },
-  {
-    img: "https://iili.io/HwdEYCu.md.jpg",
-    name: "Kunal Goel",
-    designation: "SEO Tool Builder",
-    linkedIn: "",
-  },
+  // {
+  //   img: "https://iili.io/HwdEYCu.md.jpg",
+  //   name: "Kunal Goel",
+  //   designation: "SEO Tool Builder",
+  //   linkedIn: "",
+  // },
 ];
 
 const Team = () => {
