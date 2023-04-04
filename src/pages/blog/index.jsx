@@ -9,7 +9,7 @@ const Index = ({ posts }) => {
     <OuterLayout>
       <BloglistHeader />
       <div className="-mt-40 relative z-40">
-        <BlogGrid posts={posts}/>
+        <BlogGrid posts={posts} />
       </div>
     </OuterLayout>
   );
