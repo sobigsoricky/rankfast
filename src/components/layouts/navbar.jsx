@@ -70,14 +70,14 @@ const Navbar = () => {
                   <li className="">
                     <Link
                       href="/our-process"
-                      className="text-white transition hover:text-white/75 "
+                      className="text-white transition hover:text-white/75 text-lg md:text-base"
                     >
                       Our Process
                     </Link>
                   </li>
                   <li>
                     <Link
-                      className="text-white transition hover:text-white/75 "
+                      className="text-white transition hover:text-white/75 text-lg md:text-base"
                       href="https://www.coursenator.com/"
                       target={"_blank"}
                     >
@@ -116,7 +116,7 @@ const Navbar = () => {
                       className="block text-center w-full text-[#E72C4B] px-11 py-4  font-medium bg-white text-lg md:text-base"
                       href="/contact-us"
                     >
-                      Rank now
+                      Rank Now
                     </Link>
                   </li>
                 </ul>

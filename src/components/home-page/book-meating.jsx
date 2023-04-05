@@ -10,11 +10,11 @@ const BookMeating = ({ color }) => {
               color == "white" ? "text-black" : "text-white"
             } text-lg font-semibold `}
           >
-            REPORT WILL BE SENT IN AN HOUR!
+            {/* REPORT WILL BE SENT IN AN HOUR! */}
           </p>
-          <hr className="my-2" />
+          {/* <hr className="my-2" /> */}
           <h2 className={` text-5xl md:text-7xl  text-[#E72C4B] uppercase  font-[impact]`}>
-          Book Your Free <br /> SEO Consultancy Now!
+          Book  Free  SEO <br /> Consultancy Now!
           </h2>
         </div>
         <div className="w-full lg:w-[45%] border">
