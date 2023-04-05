@@ -8,7 +8,7 @@ const settings = {
   className: "center",
   centerMode: true,
   infinite: true,
-  centerPadding: "20px",
+  centerPadding: "30px",
   slidesToShow: 3,
   slidesToScroll: 1,
   speed: 500,
@@ -46,7 +46,7 @@ const RecentProject = () => {
               src="https://iili.io/HNzMUqQ.png"
               className="h-64 w-full object-scale-down sm:h-80 lg:h-96 group-hover:scale-110  duration-500"
             />
-            <div className="bg-black pb-10 md:pb-0">
+            <div className="bg-black md:pb-0">
               <div className=" p-6 relative z-10">
                 <h3 className=" text-lg font-bold text-white sm:text-lg">
                   Builder.ai
@@ -70,7 +70,7 @@ const RecentProject = () => {
               src="https://iili.io/Hh6mZWx.md.png"
               className="h-64 w-full object-scale-down sm:h-80 lg:h-96 group-hover:scale-110  duration-500"
             />
-            <div className="bg-black pb-10 md:pb-0">
+            <div className="bg-black md:pb-0">
               <div className="bg-black p-6 relative z-10">
                 <h3 className=" text-lg font-bold text-white sm:text-lg">
                   Byjus
@@ -94,7 +94,7 @@ const RecentProject = () => {
               src="https://iili.io/HwBU8Av.webp"
               className="h-64 w-full object-scale-down sm:h-80 lg:h-96 group-hover:scale-110  duration-500"
             />
-            <div className="bg-black pb-10 md:pb-0">
+            <div className="bg-black md:pb-0">
               <div className="bg-black p-6 relative z-10">
                 <h3 className=" text-lg font-bold text-white sm:text-lg">
                   {" "}
