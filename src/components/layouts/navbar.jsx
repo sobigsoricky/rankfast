@@ -66,18 +66,18 @@ const Navbar = () => {
                 aria-label="Site Nav"
                 className={`${showMenu ? "block" : "hidden"} lg:block`}
               >
-                <ul className="flex items- fixed right-0 top-0  w-full h-full p-6 lg:p-0  bg-[#E72C4B] lg:bg-transparent lg:static  flex-col justify-center lg:justify-between lg:flex-row items-center gap-6 text-sm">
-                  <li>
+                <ul className="flex items- fixed right-0 top-0  w-full h-full p-6 lg:p-0  bg-[url('https://iili.io/HOlPogf.png')] bg-cover lg:bg-none lg:static  flex-col justify-center lg:justify-between lg:flex-row items-center gap-10 md:gap-6 text-sm">
+                  <li className="">
                     <Link
                       href="/our-process"
-                      className="text-white transition hover:text-white/75"
+                      className="text-white transition hover:text-white/75 "
                     >
                       Our Process
                     </Link>
                   </li>
                   <li>
                     <Link
-                      className="text-white transition hover:text-white/75"
+                      className="text-white transition hover:text-white/75 "
                       href="https://www.coursenator.com/"
                       target={"_blank"}
                     >
@@ -96,7 +96,7 @@ const Navbar = () => {
 
                   <li>
                     <Link
-                      className="text-white transition hover:text-white/75"
+                      className="text-white transition hover:text-white/75 text-lg md:text-base"
                       href="/portfolio"
                     >
                       Portfolio
@@ -105,18 +105,18 @@ const Navbar = () => {
 
                   <li>
                     <Link
-                      className="text-white transition hover:text-white/75"
+                      className="text-white transition hover:text-white/75 text-lg md:text-base"
                       href="/blog"
                     >
                       Blog
                     </Link>
                   </li>
-                  <li className="sm:flex sm:gap-4">
+                  <li className="w-full md:w-auto">
                     <Link
-                      className=" text-[#E72C4B] px-11 py-4 text-sm font-medium bg-white"
+                      className="block text-center w-full text-[#E72C4B] px-11 py-4  font-medium bg-white text-lg md:text-base"
                       href="/contact-us"
                     >
-                      Contact us
+                      Rank now
                     </Link>
                   </li>
                 </ul>
@@ -126,7 +126,7 @@ const Navbar = () => {
                 <div className="block lg:hidden ">
                   <button
                     onClick={(e) => setShowMenu(!showMenu)}
-                    className="rounded relative z-[999] p-2 text-white transition hover:text-gray-600/75"
+                    className="rounded relative z-[999] p-2 text-white transition hover:text-gray-600/75 "
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"

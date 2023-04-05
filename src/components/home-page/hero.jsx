@@ -46,16 +46,16 @@ const Hero = () => {
     <div>
       <div
         className="bg-gradient-to-b from-[#E72C4B] to-[#212121]  
-      pt-[140px]  pb-[25px]"
+      pt-20 md:pt-[140px]  pb-[25px]"
       >
         <div className="flex flex-col lg:flex-row justify-between container mx-auto lg:px-[120px] px-2 ">
-          <div className="pt-[80px] ">
+          <div className="pt-10 md:pt-20 ">
             <h1 className="text-lg md:text-2xl text-white font-semibold">
               Welcome to Rankfast - Your SEO Partner
             </h1>
-            <h2 className="text-4xl md:text-7xl text-white  uppercase mt-5 md:mt-5  font-[Impact]">
+            <h2 className="text-[44px] leading-none md:text-7xl text-white  uppercase mt-5 md:mt-5  font-[Impact]">
               Innovate Transform and{" "}
-              <span className="">Rankfast Forward</span>
+              <span className="text-[#212121]">Rankfast Forward</span>
             </h2>
           </div>
           <div className="hidden lg:block relative w-full h-full  max-w-[508px] max-h-[700px]">
