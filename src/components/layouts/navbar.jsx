@@ -55,7 +55,7 @@ const Navbar = () => {
                   alt=""
                   width={150}
                   height={60}
-                  className="z-10"
+                  className="z-10 scale-75 md:scale-100"
                 />
                 {/* <h2 className="-mt-3 text-2xl font-light">Rankfast</h2> */}
               </Link>

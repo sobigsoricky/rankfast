@@ -8,6 +8,7 @@ import {
   Title,
   Tooltip,
   Legend,
+  scales,
 } from "chart.js";
 import { Line } from "react-chartjs-2";
 
@@ -23,17 +24,19 @@ ChartJS.register(
 
 export const options = {
   responsive: true,
+ 
   plugins: {
     legend: {
       position: "bottom",
     },
-
   },
 };
 const labels = ["January", "February", "March", "April", "May", "June", "July"];
 
 const SeonatorTurnon = () => {
   const [isChecked, setIsChecked] = useState(false);
+  const [isMobile, setIsMobile] = useState(null)
+  console.log(isMobile);
   const [data, setData] = useState({
     labels,
     datasets: [
@@ -51,7 +54,7 @@ const SeonatorTurnon = () => {
       },
       {
         label: "Growth",
-        data:[121, 143, 146, 129, 160, 175, 117],
+        data: [121, 143, 146, 129, 160, 175, 117],
         borderColor: "#F5841F",
         backgroundColor: "#F5841F",
       },
@@ -60,7 +63,6 @@ const SeonatorTurnon = () => {
 
   const seonatorOn = () => {
     setIsChecked(!isChecked);
-   
   };
 
   useEffect(() => {
@@ -70,27 +72,27 @@ const SeonatorTurnon = () => {
         datasets: [
           {
             label: "Organic traffic",
-            data: [215, 250, 282, 292, 325, 356, 368, 500, 100],
+            data: [215, 250, 282, 292, 325, 356, 468, 500, 100],
             borderColor: "#E72C4B",
             backgroundColor: "#E72C4B",
           },
           {
             label: "Leads",
-            data: [210, 227, 255, 305, 320, 343, 376],
+            data: [210, 227, 255, 305, 320, 343, 476],
             borderColor: "#1164BB",
             backgroundColor: "#1164BB",
           },
           {
             label: "Growth",
-            data:  [201, 218, 230, 287, 343, 363, 390],
+            data: [201, 218, 230, 287, 343, 363, 490],
             borderColor: "#F5841F",
             backgroundColor: "#F5841F",
           },
         ],
       });
-    } 
-    
-    if(isChecked == false) {
+    }
+
+    if (isChecked == false) {
       setData({
         labels,
         datasets: [
@@ -108,14 +110,19 @@ const SeonatorTurnon = () => {
           },
           {
             label: "Growth",
-            data:[121, 143, 146, 129, 160, 175, 117],
+            data: [121, 143, 146, 129, 160, 175, 117],
             borderColor: "#F5841F",
             backgroundColor: "#F5841F",
           },
         ],
       });
     }
-  }, [isChecked])
+  }, [isChecked]);
+
+  useEffect(() => {
+    
+     window?.innerWidth <= 700 ? setIsMobile(true):setIsMobile(false)
+  }, [])
   
 
   return (
@@ -124,7 +131,7 @@ const SeonatorTurnon = () => {
         See how we make <span className="text-[#E72C4B]">the difference</span>
       </h2>
       <div className="md:p-4 p-2  border border-[#00000033] mt-6 w-full md:w-auto">
-        <div className="w-full flex items-start justify-start flex-col md:items-end border-b border-[#ECECEC] mb-4 pb-6 gap-2">
+        <div className="w-full flex  items-center justify-between md:flex-col md:items-end border-b border-[#ECECEC] mb-4 pb-6 gap-2">
           <p className="font-semibold md:font-normal">Turn on Rankfast</p>
           <div className="relative inline-block w-28  align-middle select-none transition duration-200 ease-in right-0">
             <input
@@ -145,7 +152,24 @@ const SeonatorTurnon = () => {
             />
           </div>
         </div>
-        <Line options={options} data={data} />
+        <div>
+
+       {isMobile?(
+        <Line
+          height={350}
+          options={options}
+          data={data}
+        />
+       ):(
+        <Line
+        options={options}
+        data={data}
+      />
+      
+        
+        )}
+        
+         </div>
       </div>
     </div>
   );

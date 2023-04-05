@@ -2,7 +2,7 @@ import Link from "next/link";
 import React from "react";
 
 const BlogCard = ({ data }) => {
-  console.log(data);
+  
   return (
     <>
       <div className="max-w-3xl w-full border bg-white border-[#00000033] flex flex-col justify-between h-full">

@@ -13,12 +13,9 @@
 .slick-slide {
     height: inherit !important;
 }
-.slide {
- 
 
-  
-}
 
 .slick-slide > div{
     height: 100%;
+    
 }

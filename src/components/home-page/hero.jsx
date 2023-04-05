@@ -53,12 +53,12 @@ const Hero = () => {
             <h1 className="text-lg md:text-2xl text-white font-semibold">
               Welcome to Rankfast - Your SEO Partner
             </h1>
-            <h2 className="text-4xl md:text-7xl text-white  uppercase  font-[Impact]">
+            <h2 className="text-4xl md:text-7xl text-white  uppercase mt-5 md:mt-5  font-[Impact]">
               Innovate Transform and{" "}
               <span className="text-[#000] md:text-white">Rankfast Forward</span>
             </h2>
           </div>
-          <div className="relative w-full h-full  max-w-[508px] max-h-[700px]">
+          <div className="hidden lg:block relative w-full h-full  max-w-[508px] max-h-[700px]">
             <Image
               src="https://iili.io/HXckPTl.md.png"
               alt=""
@@ -74,7 +74,7 @@ const Hero = () => {
             href="/contact-us"
             className="text-center w-full md:w-auto border-2 border-[#E72C4B] bg-[#E72C4B] md:px-24 py-5  font-medium text-white"
           >
-            Contact us
+            Rank Now
           </Link>
           <Link
             href="#rev-gen"
