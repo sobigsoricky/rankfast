@@ -30,7 +30,12 @@ const SingleBlog = ({ post }) => {
 export default SingleBlog;
 
 export async function getServerSideProps(context) {
-  const page = parseInt(context?.page || "1", 10);
+
+
+  res.setHeader(
+    'Cache-Control',
+    'public, s-maxage=10, stale-while-revalidate=86400'
+  )
   const { slug } = context.query;
   const res = await fetch(process.env.WPGRAPHQL_URL, {
     method: "POST",

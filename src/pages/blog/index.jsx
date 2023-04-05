@@ -4,7 +4,7 @@ import OuterLayout from "@/components/layouts/outer-layout";
 import React from "react";
 
 const Index = ({ posts }) => {
-  console.log(posts);
+
   return (
     <OuterLayout>
       <BloglistHeader />
@@ -18,7 +18,10 @@ const Index = ({ posts }) => {
 export default Index;
 
 export async function getServerSideProps({ context }) {
-  const page = parseInt(context?.page || "1", 10);
+  res.setHeader(
+    'Cache-Control',
+    'public, s-maxage=10, stale-while-revalidate=86400'
+  )
 
   const res = await fetch(process.env.WPGRAPHQL_URL, {
     method: "POST",
