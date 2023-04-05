@@ -6,3 +6,19 @@
 
 
 
+.slick-track {
+    display: flex !important;
+}
+
+.slick-slide {
+    height: inherit !important;
+}
+.slide {
+ 
+
+  
+}
+
+.slick-slide > div{
+    height: 100%;
+}

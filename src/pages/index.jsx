@@ -12,8 +12,9 @@ import BookMeating from "@/components/home-page/book-meating";
 import Footer from "@/components/layouts/footer";
 import OuterLayout from "@/components/layouts/outer-layout";
 import SeonatorTurnon from "@/components/home-page/seonator-turnon";
+import LatestBlogs from "@/components/home-page/latest-blogs";
 
-export default function Home() {
+export default function Home({posts}) {
   return (
     <>
     <Head>
@@ -30,8 +31,65 @@ export default function Home() {
         <RevenueGenrated />
         {/* <Testimonials /> */}
         <Team />
+        <LatestBlogs data={posts}/>
         <BookMeating />
       </OuterLayout>
     </>
   );
+}
+
+export async function getServerSideProps({ req, res }) {
+  res.setHeader(
+    'Cache-Control',
+    'public, s-maxage=10, stale-while-revalidate=86400'
+  )
+
+  const res1 = await fetch(process.env.WPGRAPHQL_URL, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({
+      query: `
+      {
+        posts {
+          
+          nodes {
+            title
+            slug
+            date
+            author {
+              node {
+                name
+                avatar {
+                  url
+                }
+              }
+            }
+            excerpt
+            featuredImage {
+              node {
+                sourceUrl
+              }
+            }
+          }
+        }
+      }
+          `,
+    }),
+  });
+
+  const json = await res1.json();
+
+  const { nodes } = json?.data?.posts;
+
+  return {
+    props: {
+        // nodes
+      // page,
+      posts: nodes,
+      // hasNextPage: pageInfo.hasNextPage,
+    //   json,
+    },
+  };
 }

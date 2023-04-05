@@ -58,17 +58,17 @@ const BlogCard = ({ data }) => {
             </div>
 
             <div className=" mt-6 md:mt-8">
-              <h2 className="text-lg md:text-4xl font-[impact] mb-5 ">{data.title}</h2>
+              <h2 className="text-lg md:text-4xl font-[impact] mb-5 ">{data?.title}</h2>
               <div
                 className="text-sm md:text-lg text-[#555555] font-medium exerpt-div"
-                dangerouslySetInnerHTML={{ __html: data.excerpt }}
+                dangerouslySetInnerHTML={{ __html: data?.excerpt }}
               />
             </div>
           </div>
         </div>
         <div className="px-5 md:px-14 border-t border-[#00000033] py-5 flex mt-6">
           <Link
-            href={`/blog/${data.slug}`}
+            href={`/blog/${data?.slug}`}
             className=" w-full text-center md:w-auto py-5 md:py-8 md:px-20 border border-[#2F2E2F] text-[#2F2E2F] text-sm md:text-lg font-bold"
           >
             Read Article
