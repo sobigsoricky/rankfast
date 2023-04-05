@@ -5,25 +5,25 @@ const BlogCard = ({ data }) => {
   console.log(data);
   return (
     <>
-      <div className="max-w-3xl w-full border border-[#00000033] flex flex-col justify-between h-full">
+      <div className="max-w-3xl w-full border bg-white border-[#00000033] flex flex-col justify-between h-full">
         <div>
           <div>
             <img
               src={data?.featuredImage?.node?.sourceUrl || "https://iili.io/HOApbz7.md.png" }
              
               alt=""
-              className="w-full h-[250px] object-cover"
+              className="w-full h-[130px] md:h-[250px] object-cover"
             />
           </div>
           <div className="px-5 md:px-14">
             <img
               src={data?.author?.node?.avatar?.url}
               alt=""
-              className="w-36 h-36 -mt-16"
+              className=" w-[102px] h-[102px] md:w-36 md:h-36 -mt-16"
             />
 
             <div className="flex gap-5 md:gap-14 mt-6 flex-wrap">
-              <span className="flex gap-4 items-center font-semibold text-lg">
+              <span className="flex gap-4 items-center font-semibold text-sm md:text-lg">
                 <svg
                   width="16"
                   height="16"
@@ -39,7 +39,7 @@ const BlogCard = ({ data }) => {
                 <p>{data?.author?.node?.name}</p>
               </span>
 
-              <span className="flex gap-4 items-center font-semibold text-lg">
+              <span className="flex gap-4 items-center font-semibold text-sm md:text-lg">
                 <svg
                   width="20"
                   height="20"
@@ -57,10 +57,10 @@ const BlogCard = ({ data }) => {
               </span>
             </div>
 
-            <div className="mt-8">
-              <h2 className="text-4xl font-[impact] mb-5 ">{data.title}</h2>
+            <div className=" mt-6 md:mt-8">
+              <h2 className="text-lg md:text-4xl font-[impact] mb-5 ">{data.title}</h2>
               <div
-                className="text-lg text-[#555555] font-medium exerpt-div"
+                className="text-sm md:text-lg text-[#555555] font-medium exerpt-div"
                 dangerouslySetInnerHTML={{ __html: data.excerpt }}
               />
             </div>
@@ -69,7 +69,7 @@ const BlogCard = ({ data }) => {
         <div className="px-5 md:px-14 border-t border-[#00000033] py-5 flex mt-6">
           <Link
             href={`/blog/${data.slug}`}
-            className=" w-full text-center md:w-auto py-8 md:px-20 border border-[#2F2E2F] text-[#2F2E2F] text-lg font-bold"
+            className=" w-full text-center md:w-auto py-5 md:py-8 md:px-20 border border-[#2F2E2F] text-[#2F2E2F] text-sm md:text-lg font-bold"
           >
             Read Article
           </Link>
