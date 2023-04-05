@@ -14,8 +14,8 @@ const AutherSidebar = ({ name, img, decription }) => {
   return (
     <>
   
-    <div className="relative max-w-[256px]">
-      <img src={img} alt="" className="w-64 h-64 md:-mt-32  border rounded-md z-50" />
+    <div className="relative max-w-[256px] w-full">
+      <img src={img} alt="" className="w-full h-full md:-mt-32  border rounded-md z-50" />
 
       <h3 className="text-2xl font-bold text-[#212121] mt-4">{name}</h3>
       <p className="text-sm text-[#555555] mt-5">{decription}</p>

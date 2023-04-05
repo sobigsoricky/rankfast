@@ -1,9 +1,10 @@
 import React from "react";
 
-const SingleblogContent = ({ content, title, img, auther, date  }) => {
+const SingleblogContent = ({ content, title, img, auther, date }) => {
   return (
-    <div className="max-w-4xl mx-auto  py-4 relative">
-       <div className="absolute bottom-[calc(100%_+_20px)] z-50">
+    <>
+      <div className="w-full max-w-4xl mx-auto  py-4 relative">
+        <div className="absolute bottom-[calc(100%_+_20px)] z-50">
           <h1 className="text-4xl lg:text-7xl font-[impact] text-white">
             {title}
           </h1>
@@ -42,8 +43,24 @@ const SingleblogContent = ({ content, title, img, auther, date  }) => {
             </span>
           </div>
         </div>
-      <div className="bg-white" dangerouslySetInnerHTML={{ __html: content }} />
-    </div>
+        <div
+          className="bg-white blog-content text-[#555555] "
+          dangerouslySetInnerHTML={{ __html: content }}
+        />
+      </div>
+      <style>{`
+        .blog-content h2{
+          font-family: impact;
+          font-size: 20px;
+          font-weight:300;
+          padding-top: 20px
+        }
+
+        .blog-content img{
+          padding-top: 20px
+        }
+      `}</style>
+    </>
   );
 };
 

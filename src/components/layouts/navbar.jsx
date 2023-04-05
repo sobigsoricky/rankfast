@@ -13,10 +13,8 @@ const Navbar = () => {
       (e) => {
         if (y > window.scrollY) {
           setScrollDirection("Up");
-         
         } else if (y < window.scrollY) {
           setScrollDirection("down");
-         
         }
         setY(window.scrollY);
       },
@@ -39,7 +37,9 @@ const Navbar = () => {
         className={
           scrollDirection == "Up" && window?.scrollY > 100
             ? "bg-[#e72c4b] fixed w-full top-0 z-[999] py-2 duration-1000"
-            : `bg-transparent ${showMenu?"fixed":"absolute"}  w-full top-10  z-[999] duration-1000 `
+            : `bg-transparent ${
+                showMenu ? "fixed" : "absolute"
+              }  w-full top-10  z-[999] duration-1000 `
         }
       >
         <div className="mx-auto container   sm:px-6 lg:px-[120px] px-2">
@@ -103,14 +103,14 @@ const Navbar = () => {
                     </Link>
                   </li>
 
-                  {/* <li>
-                    <a
+                  <li>
+                    <Link
                       className="text-white transition hover:text-white/75"
-                      href="/"
+                      href="/blog"
                     >
-                     Blog
-                    </a>
-                  </li> */}
+                      Blog
+                    </Link>
+                  </li>
                   <li className="sm:flex sm:gap-4">
                     <Link
                       className=" text-[#E72C4B] px-11 py-4 text-sm font-medium bg-white"
