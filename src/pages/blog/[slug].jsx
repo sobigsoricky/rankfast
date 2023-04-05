@@ -40,8 +40,12 @@ const SingleBlog = ({ post }) => {
 export default SingleBlog;
 
 export async function getServerSideProps(context) {
+  context.res.setHeader(
+    'Cache-Control',
+    'public, s-maxage=10, stale-while-revalidate=8640000'
+  )
   const { slug } = context.query;
-  const res = await fetch(process.env.WPGRAPHQL_URL, {
+  const res1 = await fetch(process.env.WPGRAPHQL_URL, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -72,7 +76,7 @@ export async function getServerSideProps(context) {
     }),
   });
 
-  const json = await res.json();
+  const json = await res1.json();
 
   const post = json?.data?.post;
 

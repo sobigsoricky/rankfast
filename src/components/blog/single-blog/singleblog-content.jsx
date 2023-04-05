@@ -5,7 +5,7 @@ const SingleblogContent = ({ content, title, img, auther, date }) => {
     <>
       <div className="w-full max-w-4xl mx-auto  py-4 relative">
         <div className="absolute bottom-[calc(100%_+_20px)] z-50">
-          <h1 className="text-4xl lg:text-7xl font-[impact] text-white">
+          <h1 className="text-4xl lg:text-6xl font-[impact] text-white break-words">
             {title}
           </h1>
           <div className="flex gap-5 md:gap-14 mt-6 flex-wrap text-white">
