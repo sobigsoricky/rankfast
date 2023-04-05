@@ -5,7 +5,7 @@ import Link from "next/link";
 
 const Hero = () => {
   const settings = {
-    speed: 5000,
+    speed: 10000,
 		autoplay: true,
 		autoplaySpeed: 0,
 		cssEase: 'linear',
@@ -55,7 +55,7 @@ const Hero = () => {
             </h1>
             <h2 className="text-4xl md:text-7xl text-white  uppercase mt-5 md:mt-5  font-[Impact]">
               Innovate Transform and{" "}
-              <span className="text-[#000] md:text-white">Rankfast Forward</span>
+              <span className="">Rankfast Forward</span>
             </h2>
           </div>
           <div className="hidden lg:block relative w-full h-full  max-w-[508px] max-h-[700px]">

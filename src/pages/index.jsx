@@ -30,66 +30,66 @@ export default function Home({posts}) {
         <SeonatorTurnon/>
         <RevenueGenrated />
         {/* <Testimonials /> */}
-        <Team />
-        <LatestBlogs data={posts}/>
         <BookMeating />
+        {/* <LatestBlogs data={posts}/> */}
+        <Team />
       </OuterLayout>
     </>
   );
 }
 
-export async function getServerSideProps({ req, res }) {
-  res.setHeader(
-    'Cache-Control',
-    'public, s-maxage=10, stale-while-revalidate=86400'
-  )
+// export async function getServerSideProps({ req, res }) {
+//   res.setHeader(
+//     'Cache-Control',
+//     'public, s-maxage=10, stale-while-revalidate=86400'
+//   )
 
-  const res1 = await fetch(process.env.WPGRAPHQL_URL, {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify({
-      query: `
-      {
-        posts {
+//   const res1 = await fetch(process.env.WPGRAPHQL_URL, {
+//     method: "POST",
+//     headers: {
+//       "Content-Type": "application/json",
+//     },
+//     body: JSON.stringify({
+//       query: `
+//       {
+//         posts {
           
-          nodes {
-            title
-            slug
-            date
-            author {
-              node {
-                name
-                avatar {
-                  url
-                }
-              }
-            }
-            excerpt
-            featuredImage {
-              node {
-                sourceUrl
-              }
-            }
-          }
-        }
-      }
-          `,
-    }),
-  });
+//           nodes {
+//             title
+//             slug
+//             date
+//             author {
+//               node {
+//                 name
+//                 avatar {
+//                   url
+//                 }
+//               }
+//             }
+//             excerpt
+//             featuredImage {
+//               node {
+//                 sourceUrl
+//               }
+//             }
+//           }
+//         }
+//       }
+//           `,
+//     }),
+//   });
 
-  const json = await res1.json();
+//   const json = await res1.json();
 
-  const { nodes } = json?.data?.posts;
+//   const { nodes } = json?.data?.posts;
 
-  return {
-    props: {
-        // nodes
-      // page,
-      posts: nodes,
-      // hasNextPage: pageInfo.hasNextPage,
-    //   json,
-    },
-  };
-}
+//   return {
+//     props: {
+//         // nodes
+//       // page,
+//       posts: nodes,
+//       // hasNextPage: pageInfo.hasNextPage,
+//     //   json,
+//     },
+//   };
+// }

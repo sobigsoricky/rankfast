@@ -34,12 +34,12 @@ const members = [
     designation: "SEO Analyst",
     linkedIn: "",
   },
-  {
-    img: "https://www.bsn.eu/wp-content/uploads/2016/12/user-icon-image-placeholder-300-grey.jpg",
-    name: "Ajitesh Mishra",
-    designation: "Technical SEO Specialist ",
-    linkedIn: "",
-  },
+  // {
+  //   img: "https://www.bsn.eu/wp-content/uploads/2016/12/user-icon-image-placeholder-300-grey.jpg",
+  //   name: "Ajitesh Mishra",
+  //   designation: "Technical SEO Specialist ",
+  //   linkedIn: "",
+  // },
   {
     img: "https://iili.io/HwdRcrP.md.jpg",
     name: " Abhijay Rajput",
@@ -56,7 +56,7 @@ const members = [
 
 const Team = () => {
   return (
-    <div className="container bg-white mx-auto lg:px-[120px] px-2 py-[106px]">
+    <div className="container bg-white mx-auto lg:px-[120px] px-2 pt-[106px]">
       <h2 className="uppercase mt-1 mb-10 text-black text-4xl md:text-6xl  font-[impact] md:leading-[70px]">
         Our team of
         <br /> <span className="text-[#E72C4B]"> Experts</span>

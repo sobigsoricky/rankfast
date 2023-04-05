@@ -51,7 +51,7 @@ const Navbar = () => {
               >
                 {/* Rankfast */}
                 <Image
-                  src="https://iili.io/HwC1qX4.md.png"
+                  src="https://iili.io/HOlVPfe.png"
                   alt=""
                   width={150}
                   height={60}

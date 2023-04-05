@@ -24,7 +24,7 @@ ChartJS.register(
 
 export const options = {
   responsive: true,
- 
+
   plugins: {
     legend: {
       position: "bottom",
@@ -35,8 +35,8 @@ const labels = ["January", "February", "March", "April", "May", "June", "July"];
 
 const SeonatorTurnon = () => {
   const [isChecked, setIsChecked] = useState(false);
-  const [isMobile, setIsMobile] = useState(null)
-  console.log(isMobile);
+
+ 
   const [data, setData] = useState({
     labels,
     datasets: [
@@ -119,12 +119,6 @@ const SeonatorTurnon = () => {
     }
   }, [isChecked]);
 
-  useEffect(() => {
-    
-     window?.innerWidth <= 700 ? setIsMobile(true):setIsMobile(false)
-  }, [])
-  
-
   return (
     <div className="bg-white container mx-auto lg:px-[120px]  py-10">
       <h2 className="font-[impact] text-5xl md:text-7xl px-2">
@@ -152,24 +146,8 @@ const SeonatorTurnon = () => {
             />
           </div>
         </div>
-        <div>
 
-       {isMobile?(
-        <Line
-          height={350}
-          options={options}
-          data={data}
-        />
-       ):(
-        <Line
-        options={options}
-        data={data}
-      />
-      
-        
-        )}
-        
-         </div>
+        <Line  options={options} data={data} className="h-96 aspect-[16/9] md:aspect-auto chart-seonator" />
       </div>
     </div>
   );
