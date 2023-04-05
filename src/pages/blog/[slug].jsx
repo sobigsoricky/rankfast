@@ -5,7 +5,7 @@ import OuterLayout from "@/components/layouts/outer-layout";
 import React from "react";
 
 const SingleBlog = ({ post }) => {
-  console.log(post);
+ 
   return (
     <OuterLayout>
       <SingleblogHeader img={post?.featuredImage?.node?.sourceUrl ||"https://iili.io/HO5KTjj.md.png"} />
