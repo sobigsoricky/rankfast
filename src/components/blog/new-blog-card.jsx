@@ -13,7 +13,7 @@ const NewBlogCard = ({ data }) => {
                 "https://iili.io/HOApbz7.md.png"
               }
               alt=""
-              className="w-full  md:h-[230px] object-cover grayscale-[100%] duration-500 group-hover:grayscale-0"
+              className="w-full  h-[230px] object-cover grayscale-[100%] duration-500 group-hover:grayscale-0"
             />
           </div>
           <div className="px-5 md:px-5">
