@@ -13,6 +13,7 @@ import Footer from "@/components/layouts/footer";
 import OuterLayout from "@/components/layouts/outer-layout";
 import SeonatorTurnon from "@/components/home-page/seonator-turnon";
 import LatestBlogs from "@/components/home-page/latest-blogs";
+import NewBlogCard from "@/components/blog/new-blog-card";
 
 export default function Home({posts}) {
   return (
@@ -24,6 +25,7 @@ export default function Home({posts}) {
     </Head>
       <OuterLayout>
         <Hero />
+        <NewBlogCard/>
         <RecentProject />
         <Services /> 
         <AuditReportForm />

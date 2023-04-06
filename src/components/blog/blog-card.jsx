@@ -76,11 +76,7 @@ const BlogCard = ({ data }) => {
         </div>
       </div>
 
-      <style jsx>{`
-        .exerpt-div div {
-          display: none;
-        }
-      `}</style>
+      
     </>
   );
 };
