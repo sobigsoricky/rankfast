@@ -74,7 +74,7 @@ const NewBlogCard = ({ data }) => {
             className=" "
            
           >
-            <div className="box flex w-full text-center md:w-auto p-5 gap-10   border border-[#2F2E2F] text-[#2F2E2F] text-sm md:text-lg font-bold  duration-200  justify-between items-center hover:bg-center">
+            <div className="box flex w-full text-center md:w-auto p-5 gap-10   border border-[#2F2E2F] text-[#2F2E2F] text-sm  font-bold  duration-200  justify-between items-center hover:bg-center">
 
             
             Read Article

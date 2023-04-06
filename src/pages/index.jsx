@@ -25,7 +25,7 @@ export default function Home({posts}) {
     </Head>
       <OuterLayout>
         <Hero />
-        <NewBlogCard/>
+    
         <RecentProject />
         <Services /> 
         <AuditReportForm />
