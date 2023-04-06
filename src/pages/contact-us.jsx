@@ -16,7 +16,7 @@ const ContactUs = () => {
     <OuterLayout>
         <ContactUsHeader/>
       <BookMeating color="white"/>
-      <Testimonials />
+      {/* <Testimonials /> */}
     </OuterLayout>
     </>
 

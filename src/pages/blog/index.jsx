@@ -1,17 +1,26 @@
 import BlogGrid from "@/components/blog/blog-grid";
 import BloglistHeader from "@/components/blog/bloglist-header";
 import OuterLayout from "@/components/layouts/outer-layout";
+import Head from "next/head";
 import React from "react";
 
 const Index = ({ posts }) => {
 
   return (
+    <>
+   <Head>
+    <title>RankFast Blog - Latest Digital Marketing Insights and Strategies</title>
+    <meta name="description" content="Stay up-to-date with the latest digital marketing trends and strategies through the RankFast blog. Our expert team shares valuable insights and tips to help you achieve success in SEO, PPC, social media marketing, and more. Visit us today and learn how to rank fast!"></meta>
+
+    
+   </Head>
     <OuterLayout>
       <BloglistHeader />
       <div className="-mt-40 relative z-40">
         <BlogGrid posts={posts} />
       </div>
     </OuterLayout>
+    </>
   );
 };
 

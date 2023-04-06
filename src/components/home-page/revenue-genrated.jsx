@@ -24,7 +24,7 @@ const RevenueGenrated = () => {
         </div>
       </div>
 
-      <div className="lg:px-[120px]  mx-auto container grid justify-center grid-cols-1 sm:grid-cols-2 xl:grid-cols-4  bg-white py-11 border">
+      <div className="lg:px-[120px]  mx-auto container grid justify-center grid-cols-1 sm:grid-cols-2 xl:grid-cols-4  bg-white py-11 ">
 
       <div className="bg-[#212121] text-white md:bg-white md:text-[#212121]  box py-10 lg:py-20   md:border border-[#00000033] text-center ">
           <h3 className="text-5xl  font-[impact] ">

@@ -2,10 +2,22 @@ import AutherSidebar from "@/components/blog/single-blog/auther-sidebar";
 import SingleblogContent from "@/components/blog/single-blog/singleblog-content";
 import SingleblogHeader from "@/components/blog/single-blog/singleblog-header";
 import OuterLayout from "@/components/layouts/outer-layout";
+import Head from "next/head";
+import { useRouter } from "next/router";
 import React from "react";
 
 const SingleBlog = ({ post }) => {
+  const router = useRouter()
+  console.log(router);
   return (
+    
+    <>
+  <Head>
+  <meta name="robots" content="index, follow"/>
+  <meta name="keywords" content={post?.seo?.metaKeywords}/>
+  <meta name="description" content={post?.seo?.metaDesc}/>
+  <title>{post?.seo?.metaDesc}</title>
+  </Head>
     <OuterLayout>
       <SingleblogHeader
         img={
@@ -34,6 +46,7 @@ const SingleBlog = ({ post }) => {
         </div>
       </div>
     </OuterLayout>
+    </>
   );
 };
 
@@ -57,6 +70,11 @@ export async function getServerSideProps(context) {
               content
               date
               title
+              seo {
+                title
+                metaDesc
+                metaKeywords
+              }
               author {
                 node {
                   name
