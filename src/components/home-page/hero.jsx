@@ -8,11 +8,12 @@ const Hero = () => {
     speed: 10000,
 		autoplay: true,
 		autoplaySpeed: 0,
-		
+		cssEase: 'linear',
+    variableWidth: true,
     slidesToShow: 3,
   	slidesToScroll: 1,
     infinite: true,
-    swipeToSlide: true,
+    
   	arrows:false,
     
     responsive: [
@@ -90,17 +91,17 @@ const Hero = () => {
 <div className="md:ml-32">
 
  
-          <Slider  {...settings} >
-            <div className="text-white  font-light ">
+          <Slider   {...settings} >
+            <div className="text-white  font-light mx-10">
               45+ SATISFIED CLIENTS
             </div>
-            <div className="text-white  font-light">
+            <div className="text-white  font-light mx-10">
               6,000,000+ ORGANIC TRAFFIC
             </div>
-            <div className="text-white  font-light">
+            <div className="text-white  font-light mx-10">
             $2,345,000+ REVENUE GENRATED
             </div>
-            <div className="text-white  font-light">
+            <div className="text-white  font-light mx-10">
               800% Average increase in website traffic
             </div>
           </Slider>
