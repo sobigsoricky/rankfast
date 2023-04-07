@@ -15,8 +15,8 @@ const SingleBlog = ({ post }) => {
   <Head>
   <meta name="robots" content="index, follow"/>
   <meta name="keywords" content={post?.seo?.metaKeywords}/>
-  <meta name="description" content={post?.seo?.metaDesc}/>
-  <title>{post?.seo?.metaDesc}</title>
+  <meta name="description" content={post?.seo?.metaDesc || `${post?.seo?.title} |Boost your website's visibility and improve your SEO game with RankFast's informative blog. Stay up-to-date with the latest trends and strategies, and discover actionable tips to attract more organic traffic. Join our community of digital marketers and take your online presence to the next level`}/>
+  <title>{post?.seo?.title}</title>
   </Head>
     <OuterLayout>
       <SingleblogHeader
@@ -70,6 +70,7 @@ export async function getServerSideProps(context) {
               content
               date
               title
+            
               seo {
                 title
                 metaDesc
