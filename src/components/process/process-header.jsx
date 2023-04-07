@@ -14,18 +14,18 @@ const ProcessHeader = () => {
       </div>
 
       <div className="md:px-[120px] px-2 bg-gradient-to-b from-[#E72C4B] to-[#212121] py-8 max-w-full ">
-        <div className="container mx-auto flex   lg:flex-row justify-center items-center relative lg:static">
-          <div className="grid max-w-full relative z-10 ">
+        <div className="container mx-auto flex   lg:flex-row justify-center items-center relative lg:static w-full lg:w-auto">
+          <div className="grid w-full lg:w-auto max-w-full relative z-10 ">
             <div className="flex flex-col items-center justify-between">
-              <div className="flex flex-col  items-center lg:items-start lg:mr-6">
-                <div className="flex flex-col lg:flex-row items-center bg-[#E72C4B] lg:bg-transparent p-4 lg:p-0">
-                  <div className="text-base md:text-3xl font-semibold text-white w-[100px] text-center">
+              <div className="flex flex-col  items-center lg:items-start lg:mr-6 w-full lg:w-auto">
+                <div className="flex flex-col lg:flex-row items-center bg-white lg:bg-transparent p-6 lg:p-0 w-full lg:w-auto">
+                  <div className="text-base md:text-3xl font-semibold text-[#E72C4B] lg:text-white w-[100px] text-center">
                     Step 1
                   </div>
 
                   <div className="flex flex-col text-center sm:items-center sm:flex-row sm:pb-0">
                     <div className="max-w-1/2">
-                      <p className="md:text-sm text-white font-light text-xs ">
+                      <p className="md:text-sm text-[#212121] lg:text-white lg:font-light  ">
                         Technical SEO audit
                       </p>
                       <svg
@@ -48,17 +48,17 @@ const ProcessHeader = () => {
             </div>
 
             <div className="flex flex-col items-center justify-between">
-              <div className="flex flex-col  items-center lg:items-start lg:mr-6">
+              <div className="flex flex-col  items-center lg:items-start lg:mr-6 w-full lg:w-auto">
                 <div className="w-px h-10 bg-gray-300 lg:ml-10"/>
 
-                <div className="flex flex-col lg:flex-row items-center bg-[#E72C4B] lg:bg-transparent p-4 lg:p-0">
-                  <div className="text-base md:text-3xl font-semibold text-white w-[100px] text-center">
+                <div className="flex flex-col lg:flex-row items-center bg-white lg:bg-transparent p-6 lg:p-0 w-full lg:w-auto">
+                  <div className="text-base md:text-3xl font-semibold text-[#E72C4B] lg:text-white w-[100px] text-center">
                     Step 2
                   </div>
 
                   <div className="flex flex-col text-center sm:items-center sm:flex-row sm:pb-0">
                     <div className="max-w-1/2">
-                      <p className="md:text-sm text-white font-light text-xs ">
+                      <p className="md:text-sm text-[#212121] lg:text-white lg:font-light  ">
                         On page keyword research
                       </p>
                       <svg
@@ -81,17 +81,17 @@ const ProcessHeader = () => {
             </div>
 
             <div className="flex flex-col items-center justify-between">
-              <div className="flex flex-col  items-center lg:items-start lg:mr-6">
+              <div className="flex flex-col  items-center lg:items-start lg:mr-6 w-full lg:w-auto">
                 <div className="w-px h-10 bg-gray-300 lg:ml-10"/>
 
-                <div className="flex flex-col lg:flex-row items-center bg-[#E72C4B] lg:bg-transparent p-4 lg:p-0">
-                  <div className="text-base md:text-3xl font-semibold text-white w-[100px] text-center">
+                <div className="flex flex-col lg:flex-row items-center bg-white lg:bg-transparent p-6 lg:p-0 w-full lg:w-auto">
+                  <div className="text-base md:text-3xl font-semibold text-[#E72C4B] lg:text-white w-[100px] text-center">
                     Step 3
                   </div>
 
                   <div className="flex flex-col text-center sm:items-center sm:flex-row sm:pb-0">
                     <div className="max-w-1/2">
-                      <p className="md:text-sm text-white font-light text-xs ">
+                      <p className="md:text-sm text-[#212121] lg:text-white lg:font-light  ">
                         Topical authority building
                       </p>
                       <svg
@@ -114,17 +114,17 @@ const ProcessHeader = () => {
             </div>
 
             <div className="flex flex-col items-center justify-between">
-              <div className="flex flex-col  items-center lg:items-start lg:mr-6">
+              <div className="flex flex-col  items-center lg:items-start lg:mr-6 w-full lg:w-auto">
                 <div className="w-px h-10 bg-gray-300 lg:ml-10"/>
 
-                <div className="flex flex-col lg:flex-row items-center bg-[#E72C4B] lg:bg-transparent p-4 lg:p-0">
-                  <div className="text-base md:text-3xl font-semibold text-white w-[100px] text-center">
+                <div className="flex flex-col lg:flex-row items-center bg-white lg:bg-transparent p-6 lg:p-0 w-full lg:w-auto">
+                  <div className="text-base md:text-3xl font-semibold text-[#E72C4B] lg:text-white w-[100px] text-center">
                     Step 4
                   </div>
 
                   <div className="flex flex-col text-center sm:items-center sm:flex-row sm:pb-0">
                     <div className="max-w-1/2">
-                      <p className="md:text-sm text-white font-light text-xs ">
+                      <p className="md:text-sm text-[#212121] lg:text-white lg:font-light  ">
                       Competitor analysis
                       </p>
                       <svg
@@ -147,17 +147,17 @@ const ProcessHeader = () => {
             </div>
 
             <div className="flex flex-col items-center justify-between">
-              <div className="flex flex-col  items-center lg:items-start lg:mr-6">
+              <div className="flex flex-col  items-center lg:items-start lg:mr-6 w-full lg:w-auto">
                 <div className="w-px h-10 bg-gray-300 lg:ml-10"/>
 
-                <div className="flex flex-col lg:flex-row items-center bg-[#E72C4B] lg:bg-transparent p-4 lg:p-0">
-                  <div className="text-base md:text-3xl font-semibold text-white w-[100px] text-center">
+                <div className="flex flex-col lg:flex-row items-center bg-white lg:bg-transparent p-6 lg:p-0 w-full lg:w-auto">
+                  <div className="text-base md:text-3xl font-semibold text-[#E72C4B] lg:text-white w-[100px] text-center">
                     Step 5
                   </div>
 
                   <div className="flex flex-col text-center sm:items-center sm:flex-row sm:pb-0">
                     <div className="max-w-1/2">
-                      <p className="md:text-sm text-white font-light text-xs ">
+                      <p className="md:text-sm text-[#212121] lg:text-white lg:font-light  ">
                       Link building management
                       </p>
                       <svg
@@ -180,17 +180,17 @@ const ProcessHeader = () => {
             </div>
 
             <div className="flex flex-col items-center justify-between">
-              <div className="flex flex-col  items-center lg:items-start lg:mr-6">
+              <div className="flex flex-col  items-center lg:items-start lg:mr-6 w-full lg:w-auto">
                 <div className="w-px h-10 bg-gray-300 lg:ml-10"/>
 
-                <div className="flex flex-col lg:flex-row items-center bg-[#E72C4B] lg:bg-transparent p-4 lg:p-0 ">
-                  <div className="text-base md:text-3xl font-semibold text-white w-[100px] text-center">
+                <div className="flex flex-col lg:flex-row items-center bg-white lg:bg-transparent p-6 lg:p-0 w-full lg:w-auto ">
+                  <div className="text-base md:text-3xl font-semibold text-[#E72C4B] lg:text-white w-[100px] text-center">
                     Step 6
                   </div>
 
                   <div className="flex flex-col text-center sm:items-center sm:flex-row sm:pb-0">
                     <div className="max-w-1/2">
-                      <p className="md:text-sm text-white font-light text-xs ">
+                      <p className="md:text-sm text-[#212121] lg:text-white lg:font-light  ">
                       Content management (Update, merge, delete)
                       </p>
                       <svg
@@ -214,17 +214,17 @@ const ProcessHeader = () => {
 
 
             <div className="flex flex-col items-center justify-between">
-              <div className="flex flex-col  items-center lg:items-start lg:mr-6">
+              <div className="flex flex-col  items-center lg:items-start lg:mr-6 w-full lg:w-auto">
                 <div className="w-px h-10 bg-gray-300 lg:ml-10"/>
 
-                <div className="flex flex-col lg:flex-row items-center bg-[#E72C4B] lg:bg-transparent p-4 lg:p-0 ">
-                  <div className="text-base md:text-3xl font-semibold text-white w-[100px] text-center">
+                <div className="flex flex-col lg:flex-row items-center bg-white lg:bg-transparent p-6 lg:p-0 w-full lg:w-auto ">
+                  <div className="text-base md:text-3xl font-semibold text-[#E72C4B] lg:text-white w-[100px] text-center">
                     Step 7
                   </div>
 
                   <div className="flex flex-col text-center sm:items-center sm:flex-row sm:pb-0">
                     <div className="max-w-1/2">
-                      <p className="md:text-sm text-white font-light text-xs ">
+                      <p className="md:text-sm text-[#212121] lg:text-white lg:font-light  ">
                       Influencer campaigns
                       </p>
                       <svg
@@ -246,17 +246,17 @@ const ProcessHeader = () => {
               </div>
             </div>
             <div className="flex flex-col items-center justify-between">
-              <div className="flex flex-col  items-center lg:items-start lg:mr-6">
+              <div className="flex flex-col  items-center lg:items-start lg:mr-6 w-full lg:w-auto">
                 <div className="w-px h-10 bg-gray-300 lg:ml-10"/>
 
-                <div className="flex flex-col lg:flex-row items-center bg-[#E72C4B] lg:bg-transparent p-4 lg:p-0">
-                  <div className="text-base md:text-3xl font-semibold text-white w-[100px] text-center">
+                <div className="flex flex-col lg:flex-row items-center bg-white lg:bg-transparent p-6 lg:p-0 w-full lg:w-auto">
+                  <div className="text-base md:text-3xl font-semibold text-[#E72C4B] lg:text-white w-[100px] text-center">
                     Step 8
                   </div>
 
                   <div className="flex flex-col text-center sm:items-center sm:flex-row sm:pb-0">
                     <div className="max-w-1/2">
-                      <p className="md:text-sm text-white font-light text-xs ">
+                      <p className="md:text-sm text-[#212121] lg:text-white lg:font-light  ">
                       Conversion rate optimization
 
 
