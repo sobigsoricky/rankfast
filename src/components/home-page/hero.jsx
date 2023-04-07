@@ -36,7 +36,7 @@ const Hero = () => {
       {
         breakpoint: 480,
         settings: {
-          slidesToShow: 1.5,
+          slidesToShow: 1,
           slidesToScroll: 1
         }
       }
@@ -69,22 +69,22 @@ const Hero = () => {
           </div>
         </div>
 
-        <div className="mt-16 flex flex-wrap  gap-6 container mx-auto lg:px-[120px] px-2 ">
+        <div className="mt-10 md:mt-16 flex flex-wrap  gap-3 md:gap-6 container mx-auto lg:px-[120px] px-2 ">
           <Link
             href="/contact-us"
-            className="text-center w-full md:w-auto border-2 border-[#E72C4B] bg-[#E72C4B] md:px-24 py-5  font-medium text-white"
+            className="text-center w-full md:w-auto border-2 border-[#E72C4B] bg-[#E72C4B] md:px-24 py-2 md:py-5  font-medium text-white text-sm md:text-base"
           >
             Rank Now
           </Link>
           <Link
             href="#rev-gen"
-            className="text-center w-full md:w-auto border-2 border-white md:px-24 py-5  font-medium text-white"
+            className="text-center w-full md:w-auto border-2 border-white md:px-24 py-2 md:py-5  font-medium text-white text-sm md:text-base"
           >
             View Results
           </Link>
         </div>
       </div>
-      <div className="bg-[#212121] flex items-center w-full gap-8    py-11">
+      <div className="bg-[#212121] flex items-center w-full gap-8  py-5  md:py-11">
         <div className="container mx-auto lg:px-[120px] px-2  flex-col md:flex-row gap-10">
           <h3 className="font-semibold text-white md:absolute">Results</h3>
 <div className="md:ml-32">
