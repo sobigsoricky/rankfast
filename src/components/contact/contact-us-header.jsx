@@ -27,9 +27,9 @@ const ContactUsHeader = () => {
   };
   return (
     <div>
-      <div className="relative">
+      <div className="relative bg-[#212121]">
         <div className="absolute w-full h-full flex flex-wrap justify-center object-contain   overflow-hidden">
-          <Image src="https://iili.io/HXjtmGf.md.webp" fill />
+          {/* <Image src="https://iili.io/HXjtmGf.md.webp" fill /> */}
         </div>
         <div className="relative z-50 lg:px-[120px]  mx-auto container pt-[200px] md:py-[200px] flex justify-between md:flex-row flex-col gap-4">
           <div className="px-2">
@@ -37,17 +37,17 @@ const ContactUsHeader = () => {
               {" "}
               Contact us
             </h1>
-            <h3 className="text-4xl font-[impact] lg:text-8xl  text-white uppercase">
+            <h3 className="text-4xl font-[impact] lg:text-8xl  text-[#e72c4b] uppercase">
               Seo is king
             </h3>
 
-            <Link href="#book-meating" className="w-full md:w-auto inline-block py-4 md:px-28 text-center bg-[#212121] mt-8 font-medium text-white">
+            <Link href="#book-meating" className="text-center w-full md:w-auto border-2 border-white md:px-24 py-5  font-medium text-white mt-8 inline-block">
               Book a meeting
             </Link>
 
-            <p className="mt-8 text-[#00000099] font-semibold">
+            <p className="mt-8 text-[#e72c4b] font-semibold">
               Write to us at{" "}
-              <span className="block font-bold text-white md:text-black text-lg">
+              <span className="block font-bold text-white  text-lg">
                 contactcoursenator@gmail.com
               </span>
             </p>
