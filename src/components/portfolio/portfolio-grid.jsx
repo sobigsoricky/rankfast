@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React from "react";
+import PortfolioCard from "./portfolio-card";
 
 const Companies = [
   {
@@ -56,31 +57,12 @@ const PortfolioGrid = () => {
   return (
     <div className="flex flex-wrap justify-center md:justify-between container mx-auto lg:px-[120px] px-2 gap-8 -mt-20 relative z-50">
       {Companies?.map((company, i) => (
-        <div key={i} className="w-[400px] border border-[#00000033]">
-          <Image
-            src={company.img}
-            width={400}
-            height={200}
-            className="h-[200px] bg-[#212121] object-scale-down"
-          />
-          <div className="p-4">
-            <h3 className="text-2xl font-bold mb-2">{company.name}</h3>
+       
 
-            <p className="mt-4">{company.details}</p>
-            {/* <div className="flex flex-wrap gap-2">
-            <span className="text-[#00BC29] bg-[#00BC2933] p-1 text-sm">
-            12X Natural traffic
-            </span>
-            <span className="text-[#00BC29] bg-[#00BC2933] p-1 text-sm">
-            12X Natural traffic
-            </span>
-            <span className="text-[#00BC29] bg-[#00BC2933] p-1 text-sm">
-            12X revenue
-            </span>
-           
-          </div> */}
-          </div>
-        </div>
+          
+
+        <PortfolioCard company={company} key={i}/>
+       
       ))}
     </div>
   );
