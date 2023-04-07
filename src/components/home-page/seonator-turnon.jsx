@@ -120,7 +120,7 @@ const SeonatorTurnon = () => {
   }, [isChecked]);
 
   return (
-    <div className="bg-white container mx-auto lg:px-[120px]  py-20 md:py-[146px]">
+    <div className="bg-white container mx-auto lg:px-[120px]  py-20 md:pt-[146px]">
       <h2 className="font-[impact] text-5xl md:text-7xl px-2">
         See how we make <span className="text-[#E72C4B]">the difference</span>
       </h2>

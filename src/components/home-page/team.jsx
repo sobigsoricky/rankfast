@@ -64,7 +64,7 @@ const Team = () => {
 
       <div className="w-full grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10 justify-center md:justify-between">
         {members?.map((member, i) => (
-          <div key={i} className="relative  mt-10 grayscale-[100%] hover:grayscale-0 duration-500">
+          <div key={i} className="relative  mt-10  duration-500">
             <div className="relative w-full  max-w-[280px] max-h-[280px]">
               <Image
                 src={member.img}
