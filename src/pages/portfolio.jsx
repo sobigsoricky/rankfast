@@ -8,7 +8,7 @@ const Portfolio = () => {
   return (
     <>
     <Head>
-      <title>Portfolio|Rankfast-See How We Helps Businesses Improve Their Online Presence</title>
+      <title>Portfolio|Rankfast</title>
       <meta name="description" content=" Check out Rankfast's portfolio and see how our team of SEO experts has helped businesses improve their online presence and achieve higher search engine rankings. Our customized solutions include SEO, content marketing, link building, UI UX design, and more." />
     </Head>
     <OuterLayout>

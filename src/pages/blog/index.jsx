@@ -26,11 +26,8 @@ const Index = ({ posts }) => {
 
 export default Index;
 
-export async function getServerSideProps({ req, res }) {
-  res.setHeader(
-    'Cache-Control',
-    'public, s-maxage=10, stale-while-revalidate=86400'
-  )
+export async function getServerSideProps(context) {
+  context?.res?.setHeader('Cache-Control', `s-maxage=600000, stale-while-revalidate`) 
 
   const res1 = await fetch(process.env.WPGRAPHQL_URL, {
     method: "POST",

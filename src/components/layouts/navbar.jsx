@@ -69,7 +69,7 @@ const Navbar = () => {
                 <ul className="flex items- fixed right-0 top-0  w-full h-full p-6 lg:p-0  bg-[url('https://iili.io/HOlPogf.png')] bg-cover lg:bg-none lg:static  flex-col justify-center lg:justify-between lg:flex-row items-center gap-10 md:gap-6 text-sm">
                   <li className="">
                     <Link
-                      href="/our-process"
+                      href="/our-process/"
                       className="text-white transition hover:text-white/75 text-lg md:text-base"
                     >
                       Our Process
@@ -97,7 +97,7 @@ const Navbar = () => {
                   <li>
                     <Link
                       className="text-white transition hover:text-white/75 text-lg md:text-base"
-                      href="/portfolio"
+                      href="/portfolio/"
                     >
                       Portfolio
                     </Link>
@@ -106,7 +106,7 @@ const Navbar = () => {
                   <li>
                     <Link
                       className="text-white transition hover:text-white/75 text-lg md:text-base"
-                      href="/blog"
+                      href="/blog/"
                     >
                       Blog
                     </Link>
@@ -114,7 +114,7 @@ const Navbar = () => {
                   <li className="w-full md:w-auto">
                     <Link
                       className="block text-center w-full text-[#E72C4B] px-11 py-4  font-medium bg-white text-lg md:text-base"
-                      href="/contact-us"
+                      href="/contact-us/"
                     >
                       Rank Now
                     </Link>

@@ -16,7 +16,7 @@ export default function App({ Component, pageProps }) {
   return (
     <>
     <Head>
-    <link rel="canonical" href={`https://rankfast.co${router.asPath.slice(0, router.asPath.indexOf('?'))}`}></link>
+    <link rel="canonical" href={`https://rankfast.co${router.asPath}`}></link>
 <meta property="og:url" content={`https://rankfast.co${router.asPath}`}></meta>
 
 
