@@ -73,13 +73,13 @@ const Hero = () => {
         <div className="mt-10 md:mt-16 flex flex-wrap  gap-3 md:gap-6 container mx-auto lg:px-[120px] px-2 ">
           <Link
             href="/contact-us"
-            className="text-center w-full md:w-auto border-2 border-[#E72C4B] bg-[#E72C4B] md:px-24 py-2 md:py-5  font-medium text-white text-sm md:text-base"
+            className="text-center w-full md:w-auto border-2 border-[#E72C4B] bg-[#E72C4B] md:px-24 py-4 md:py-5  font-medium text-white  md:text-base"
           >
             Rank Now
           </Link>
           <Link
             href="#rev-gen"
-            className="text-center w-full md:w-auto border-2 border-white md:px-24 py-2 md:py-5  font-medium text-white text-sm md:text-base"
+            className="text-center w-full md:w-auto border-2 border-white md:px-24 py-4 md:py-5  font-medium text-white  md:text-base"
           >
             View Results
           </Link>
