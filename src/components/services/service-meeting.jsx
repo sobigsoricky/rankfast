@@ -1,10 +1,10 @@
 import React from "react"
 import { InlineWidget } from "react-calendly"
-const BookMeating = ({ color }) => {
+const ServiceMeeting = ({ color }) => {
   return (
     <div
       id='book-meating'
-      className={`${color == "white" ? "bg-white" : "bg-[#212121]"} `}
+      className={`${color == "white" ? "bg-black" : "bg-[#212121]"} `}
     >
       <div className='container mx-auto flex-col md:flex-row lg:px-[120px] px-2 py-20 flex md:justify-center items-center gap-20 '>
         <div>
@@ -17,9 +17,10 @@ const BookMeating = ({ color }) => {
           </p>
           {/* <hr className="my-2" /> */}
           <h2
-            className={` text-5xl md:text-7xl  text-[#E72C4B] uppercase  font-[impact]`}
+            className={` text-5xl md:text-7xl  text-white uppercase  font-[impact]`}
           >
-            Book Free SEO <br /> Consultancy Now!
+            Build your Brand
+            <br /> Now!
           </h2>
         </div>
         <div className='w-full lg:w-[45%] border'>
@@ -30,4 +31,4 @@ const BookMeating = ({ color }) => {
   )
 }
 
-export default BookMeating
+export default ServiceMeeting
