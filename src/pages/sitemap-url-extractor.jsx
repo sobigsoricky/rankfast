@@ -4,11 +4,14 @@ import React, { useState, useEffect } from "react";
 import { CSVLink, CSVDownload } from "react-csv";
 import * as XLSX from 'xlsx';
 import { saveAs } from 'file-saver';
+import { Button, Dialog, DialogContent, Typography } from "@mui/material";
+import { CheckCircle } from "@mui/icons-material";
 
 const SitemapUrlExtractor = () => {
   const [urls, setUrls] = useState([]);
   const [sitemap, setSitemap] = useState("");
   const [loading, setLoading] = useState(true);
+  const [open, setOpen] = useState(false)
 
   const fetchSitemap = async (url) => {
     setLoading(true);
@@ -29,7 +32,7 @@ const SitemapUrlExtractor = () => {
 
           console.log(row)
           const column1Element = row.innerHTML;
-          rowData.column1 = column1Element ? column1Element : '';
+          rowData.url = column1Element ? column1Element : '';
 
           console.log(rowData)
           jsonData.push(rowData);
@@ -43,14 +46,17 @@ const SitemapUrlExtractor = () => {
         const excelBuffer = XLSX.write(workbook, { bookType: 'xlsx', type: 'array' });
         const excelBlob = new Blob([excelBuffer], { type: 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet' });
 
-        saveAs(excelBlob, 'data.xlsx');
+        console.log()
+
+        saveAs(excelBlob, `${sitemap.split('/')[2]} - sitemap.xlsx`);
+        setOpen(true)
       }
     })
   };
 
 
 
-  return (
+  return (<>
     <OuterLayout>
 
       <div
@@ -83,12 +89,38 @@ const SitemapUrlExtractor = () => {
               type="text"
               className="w-full bg-transparent border border-[#FFFFFF33] p-4 text-white placeholder:text-white"
             />
-            <button
-              onClick={(e) => fetchSitemap(sitemap)}
+            {/* <button
+
               className="py-5 px-20 bg-[#E72C4B] text-white"
             >
               Upload
+            </button> */}
+
+
+            <button
+              type="submit"
+              className="bg-white hover:bg-[#E72C4B] hover:text-white duration-500  flex justify-center py-8  items-center  group px-28 md:py-2 relative overflow-hidden mt-6 md:mt-0"
+              onClick={(e) => fetchSitemap(sitemap)}
+            >
+              <span className="text-lg font-semibold text-white absolute left-[-200%] group-hover:left-0 w-full duration-500 py-6 ">
+                Upload
+              </span>
+              <svg
+                width="28"
+                height="44"
+                viewBox="0 0 28 44"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                className=" right-0 group-hover:right-[-200%] absolute duration-500 w-full"
+              >
+                <path
+                  d="M5.68332 43.5L0.666656 38.4833L17.15 22L0.666656 5.51667L5.68332 0.5L27.1833 22L5.68332 43.5Z"
+                  fill="black"
+                />
+              </svg>
             </button>
+
+
           </div>
         </div>
       </div>
@@ -151,6 +183,14 @@ const SitemapUrlExtractor = () => {
         </div>
       ) : ''}
     </OuterLayout>
+    <Dialog maxWidth="xs" fullWidth open={open}>
+      <DialogContent style={{ padding: "1rem", display: "flex", flexDirection: "column", alignItems: "center" }}>
+        <CheckCircle style={{ color: "green", marginBottom: "1rem" }} />
+        <h5 style={{ marginBottom: "1rem", fontWeight: "600", textAlign: "center" }}>Your {sitemap.split('/')[2]} - sitemap.xlsx file downloaded successfully.!</h5>
+        <Button variant="contained" className="bg-[#E72C4B] hover:bg-[#E72C4B] hover:text-white duration-500  flex justify-center  items-center relative overflow-hidden" onClick={() => setOpen(false)}>OK</Button>
+      </DialogContent>
+    </Dialog>
+  </>
   );
 };
 
